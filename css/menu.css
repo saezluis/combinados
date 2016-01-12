@@ -1,0 +1,70 @@
+/*
+Error: Undefined mixin 'desde'.
+        on line 6 of /Applications/MAMP/htdocs/rekkit_ok/menu.scss, in `desde'
+        from line 6 of /Applications/MAMP/htdocs/rekkit_ok/menu.scss
+
+1: header nav {
+2: 	width:90%;
+3: 	max-width:1000px;
+4: 	margin:20px auto;
+5: 	// background:rgba($rosado_oscuro,.8);
+6: 	@include desde (web){
+7: 		background:none;
+8: 		overflow:hidden;
+9: 		max-width: none;
+10: 		width: 96%;
+11: 		position: relative;
+
+Backtrace:
+/Applications/MAMP/htdocs/rekkit_ok/menu.scss:6:in `desde'
+/Applications/MAMP/htdocs/rekkit_ok/menu.scss:6
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:338:in `visit_mixin'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/stack.rb:98:in `with_mixin'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/stack.rb:98:in `with_mixin'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:420:in `visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:420:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:420:in `visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:167:in `visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:8:in `send'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/tree/root_node.rb:20:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/engine.rb:268:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/exec/sass_scss.rb:404:in `run'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/exec/sass_scss.rb:62:in `process_result'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/exec/base.rb:52:in `parse'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/../lib/sass/exec/base.rb:19:in `parse!'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/scss:13
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'desde'.\A         on line 6 of /Applications/MAMP/htdocs/rekkit_ok/menu.scss, in `desde'\A         from line 6 of /Applications/MAMP/htdocs/rekkit_ok/menu.scss\A \A 1: header nav {\A 2: 	width:90%;\A 3: 	max-width:1000px;\A 4: 	margin:20px auto;\A 5: 	// background:rgba($rosado_oscuro,.8);\A 6: 	@include desde (web){\A 7: 		background:none;\A 8: 		overflow:hidden;\A 9: 		max-width: none;\A 10: 		width: 96%;\A 11: 		position: relative;"; }

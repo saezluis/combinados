@@ -1,0 +1,1 @@
+function main(){$(".menu_bar").click(function(){1==contador?($("nav").animate({left:"0"}),contador=0):(contador=1,$("nav").animate({left:"-100%"}))})}$(document).ready(main);var contador=1;

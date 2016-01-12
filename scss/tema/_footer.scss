@@ -1,0 +1,11 @@
+footer{
+	margin-top: 2em;
+	@include desde (web){
+		margin-top: 0;
+	}
+	.otros-logos{
+		@include desde (web){
+			text-align: right;
+		}
+	}
+}

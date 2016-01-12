@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet", href="css/styles.css")
+		link(rel='shortcut icon', type='image/png', href='/favicon.png')
+		//-xlink(rel='shortcut icon', type='image/png', href='http://eg.com/favicon.png')
+		//-script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+		script(src="js/jquery-1.12.0.min.js")
+		script(src="js/scripts.js")
+		title Combina2
+	body
+		#preloader
+			#loader
+		.menu_bar
+			a.bt-menu(href='#')
+				span
+					img(src="img/menu.png")
+				| Menu
+		nav
+			ul
+				li
+					a(href='index.html') Inicio
+				li
+					a(href='combinaciones.html') Combinaciones
+				li
+					a(href='premios.html') Premios
+				li
+					a(href='#') Bases
+				li
+					a(href='ganadores.html') Ganadores
+				li
+					a(href='contacto.html') Contacto
+		header
+			.ed-container
+				.ed-item.base-100.web-100
+					.logo-rekkit
+						img(src="img/logo-rekkit.png")
+					.logo-rekkitW
+						img(src="img/logo-rekkit.png")
+					.torres
+						img(src="img/torres.png")
+					.birds
+						img(src="img/birds.png", alt="")
+					.palmera
+						img(src="img/palmera.png")
+					a.logo(href="index.html") 
+						img(src="img/logo.png")
+					.avion-left
+						img(src="img/avion-left.png")
+					.avion-right
+						img(src="img/avion-right.png")
+					//-silla y tango
+					.silla
+						img(src="img/silla.png", alt="")
+					.tango
+						img(src="img/tango.png", alt="")
+				.ed-item.base-100.tablet-50.tablet-order-2
+					h1 Ganas tú, gano yo... <span>Ganamos los 2</span>
+					.claim-t
+						p Ingresa el número de factura y participa por
+							|espectaculares premios diarios y 3 increíbles
+							|viajes para 2 personas.
+					a.jugar-t(href="jugar.html") Jugar
+				.ed-item.base-100.tablet-50.tablet-order-1
+					.bodegon
+						img(src="img/bodegon.png")
+					.personas
+						img(src="img/personas.png")
+					.claim
+						p Ingresa el número de factura y participa por
+							|espectaculares premios diarios y 3 increíbles
+							|viajes para 2 personas.
+					a.jugar(href="jugar.html") Jugar
+		footer
+			.ed-container.total
+				.ed-item.base-50.no-padding.web-50.no-padding
+					.adelco
+						img(src="img/logo-adelco.png")
+				.ed-item.base-50.no-padding.web-50.no-padding
+					.otros-logos
+						img(src="img/otros-logos.png")
+		script.
+			$(window).load(function() {
+			$('#preloader').fadeOut('slow');
+			$('body').css({'overflow':'visible'});
+			});
