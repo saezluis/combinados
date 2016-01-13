@@ -8,8 +8,306 @@
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Combina2</title>
+	
+	<script type="text/javascript">
+		function combinacion(){
+			
+			//mortein	nugget 	vanish 	durex 	airweek
+			
+			//---- Combinaciones 0X
+			if(mortein.checked == false && nugget.checked == false && vanish.checked == false && durex.checked == false && airweek.checked == false){
+				$("#powerLotto").text("0X");
+			}
+			
+			if(mortein.checked == true && nugget.checked == false && vanish.checked == false && durex.checked == false && airweek.checked == false){
+				$("#powerLotto").text("0X");
+			}
+			
+			if(mortein.checked == false && nugget.checked == true && vanish.checked == false && durex.checked == false && airweek.checked == false){
+				$("#powerLotto").text("0X");
+			}
+			
+			if(mortein.checked == false && nugget.checked == false && vanish.checked == true && durex.checked == false && airweek.checked == false){
+				$("#powerLotto").text("0X");
+			}
+			
+			if(mortein.checked == false && nugget.checked == false && vanish.checked == false && durex.checked == true && airweek.checked == false){
+				$("#powerLotto").text("0X");
+			}
+			
+			if(mortein.checked == false && nugget.checked == false && vanish.checked == false && durex.checked == false && airweek.checked == true){
+				$("#powerLotto").text("0X");
+			}
+			
+			//mortein	nugget 	vanish 	durex 	airweek
+			
+			//----Combinaciones 2x -----
+			//---- mortein -------------
+			if(mortein.checked == true){
+				if( nugget.checked == true && vanish.checked == false && durex.checked == false && airweek.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(mortein.checked == true){
+				if( nugget.checked == false && vanish.checked == true && durex.checked == false && airweek.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(mortein.checked == true){
+				if( nugget.checked == false && vanish.checked == false && durex.checked == true && airweek.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(mortein.checked == true){
+				if( nugget.checked == false && vanish.checked == false && durex.checked == false && airweek.checked == true){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			//mortein	nugget 	vanish 	durex 	airweek
+			
+			//----Combinaciones 2x -----
+			//---- nugget -------------
+			if(nugget.checked == true){
+				if( mortein.checked == true && vanish.checked == false && durex.checked == false && airweek.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(nugget.checked == true){
+				if( mortein.checked == false && vanish.checked == true && durex.checked == false && airweek.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(nugget.checked == true){
+				if( mortein.checked == false && vanish.checked == false && durex.checked == true && airweek.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(nugget.checked == true){
+				if( mortein.checked == false && vanish.checked == false && durex.checked == false && airweek.checked == true){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			//mortein	nugget 	vanish 	durex 	airweek
+			
+			//----Combinaciones 2x -----
+			//---- vanish -------------
+			if(vanish.checked == true){
+				if( mortein.checked == true && nugget.checked == false && durex.checked == false && airweek.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(vanish.checked == true){
+				if( mortein.checked == false && nugget.checked == true && durex.checked == false && airweek.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(vanish.checked == true){
+				if( mortein.checked == false && nugget.checked == false && durex.checked == true && airweek.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(vanish.checked == true){
+				if( mortein.checked == false && nugget.checked == false && durex.checked == false && airweek.checked == true){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			//mortein	nugget 	vanish 	durex 	airweek
+			
+			//----Combinaciones 2x -----
+			//---- durex -------------
+			if(durex.checked == true){
+				if( mortein.checked == true && nugget.checked == false && vanish.checked == false && airweek.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(durex.checked == true){
+				if( mortein.checked == false && nugget.checked == true && vanish.checked == false && airweek.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(durex.checked == true){
+				if( mortein.checked == false && nugget.checked == false && vanish.checked == true && airweek.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(durex.checked == true){
+				if( mortein.checked == false && nugget.checked == false && vanish.checked == false && airweek.checked == true){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			//mortein	nugget 	vanish 	durex 	airweek
+			
+			//----Combinaciones 2x -----
+			//---- airweek -------------
+			if(airweek.checked == true){
+				if( mortein.checked == true && nugget.checked == false && vanish.checked == false && durex.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(airweek.checked == true){
+				if( mortein.checked == false && nugget.checked == true && vanish.checked == false && durex.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(airweek.checked == true){
+				if( mortein.checked == false && nugget.checked == false && vanish.checked == true && durex.checked == false){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			if(airweek.checked == true){
+				if( mortein.checked == false && nugget.checked == false && vanish.checked == false && durex.checked == true){
+					$("#powerLotto").text("2X");
+				}
+			}
+			
+			//mortein	nugget 	vanish 	durex 	airweek
+			
+			//----Combinaciones 3x -----
+			//---- mortein y nugget-------------
+			if(mortein.checked == true && nugget.checked == true){
+				if(vanish.checked == true && durex.checked == false && airweek.checked == false){
+					$("#powerLotto").text("3X");
+				}
+			}
+			
+			if(mortein.checked == true && nugget.checked == true){
+				if(vanish.checked == false && durex.checked == true && airweek.checked == false){
+					$("#powerLotto").text("3X");
+				}
+			}
+			
+			if(mortein.checked == true && nugget.checked == true){
+				if(vanish.checked == false && durex.checked == false && airweek.checked == true){
+					$("#powerLotto").text("3X");
+				}
+			}
+			
+			//mortein	nugget 	vanish 	durex 	airweek
+			
+			//----Combinaciones 3x -----
+			//---- nugget y vanish-------------
+			if(nugget.checked == true && vanish.checked == true){
+				if(mortein.checked == true && durex.checked == false && airweek.checked == false){
+					$("#powerLotto").text("3X");
+				}
+			}
+			
+			if(nugget.checked == true && vanish.checked == true){
+				if(mortein.checked == false && durex.checked == true && airweek.checked == false){
+					$("#powerLotto").text("3X");
+				}
+			}	
+			
+			if(nugget.checked == true && vanish.checked == true){
+				if(mortein.checked == false && durex.checked == false && airweek.checked == true){
+					$("#powerLotto").text("3X");
+				}
+			}
+			
+			//mortein	nugget 	vanish 	durex 	airweek
+			
+			//----Combinaciones 3x -----
+			//---- vanish y durex-------------
+			if(vanish.checked == true && durex.checked == true){
+				if(mortein.checked == true && nugget.checked == false && airweek.checked == false){
+					$("#powerLotto").text("3X");
+				}
+			}
+			
+			if(vanish.checked == true && durex.checked == true){
+				if(mortein.checked == false && nugget.checked == true && airweek.checked == false){
+					$("#powerLotto").text("3X");
+				}
+			}
+			
+			if(vanish.checked == true && durex.checked == true){
+				if(mortein.checked == false && nugget.checked == false && airweek.checked == true){
+					$("#powerLotto").text("3X");
+				}
+			}
+			
+			//mortein	nugget 	vanish 	durex 	airweek
+			
+			//----Combinaciones 3x -----
+			//---- durex y airweek-------------
+			if(durex.checked == true && airweek.checked == true){
+				if(mortein.checked == true && nugget.checked == false && vanish.checked == false){
+					$("#powerLotto").text("3X");
+				}
+			}
+			
+			if(durex.checked == true && airweek.checked == true){
+				if(mortein.checked == false && nugget.checked == true && vanish.checked == false){
+					$("#powerLotto").text("3X");
+				}
+			}
+			
+			if(durex.checked == true && airweek.checked == true){
+				if(mortein.checked == false && nugget.checked == false && vanish.checked == true){
+					$("#powerLotto").text("3X");
+				}
+			}
+			
+			//mortein	nugget 	vanish 	durex 	airweek
+			
+			//----Combinaciones 3x -----
+			//---- mortein y vanish y airweek-------------
+			if(mortein.checked == true && vanish.checked == true && airweek.checked == true){
+					$("#powerLotto").text("3X");
+			}
+			
+			//mortein	nugget 	vanish 	durex 	airweek
+			
+			//----Combinaciones 4x -----
+			if(mortein.checked == true && nugget.checked == true && vanish.checked == true && durex.checked == true && airweek.checked == false){
+					$("#powerLotto").text("4X");
+			}
+			
+			if(mortein.checked == false && nugget.checked == true && vanish.checked == true && durex.checked == true && airweek.checked == true){
+					$("#powerLotto").text("4X");
+			}
+			
+			if(mortein.checked == true && nugget.checked == true && vanish.checked == false && durex.checked == true && airweek.checked == true){
+					$("#powerLotto").text("4X");
+			}
+			
+			if(mortein.checked == true && nugget.checked == true && vanish.checked == true && durex.checked == false && airweek.checked == true){
+					$("#powerLotto").text("4X");
+			}
+			
+			if(mortein.checked == true && nugget.checked == false && vanish.checked == true && durex.checked == true && airweek.checked == true){
+					$("#powerLotto").text("4X");
+			}
+			
+			//----Combinaciones 5x -----
+			if(mortein.checked == true && nugget.checked == true && vanish.checked == true && durex.checked == true && airweek.checked == true){
+					$("#powerLotto").text("4X");
+			}
+			
+		}
+	</script>
+	
   </head>
-  <body>
+  <body onload="combinacion()">
     <div id="preloader">
       <div id="loader"></div>
     </div>
@@ -53,9 +351,29 @@
             <input type="text" name="telefono" placeholder="Ingresa tu número de teléfono" required />
             <div class="sep"></div>
             <label>Selecciona tu combinación</label>
-            <input type="radio" name="combinacion" value="2" /><span>2x</span>
-            <input type="radio" name="combinacion" value="3" /><span>3x</span>
-            <input type="radio" name="combinacion" value="4" /><span>4x</span>
+            <div class="elige-combi-caja">
+              <div class="logoscombinar">
+                <label for="mortein" name="mortein"><img src="img/mortein.png" alt="Mortein"/></label>
+                <input type="checkbox" name="mortein" id="mortein" onclick="combinacion()"/>
+              </div>
+              <div class="logoscombinar">
+                <label for="nugget" name="nugget"><img src="img/nugget.png" alt="Nugget"/></label>
+                <input type="checkbox" name="nugget" id="nugget" onclick="combinacion()"/>
+              </div>
+              <div class="logoscombinar">
+                <label for="vanish" name="vanish"><img src="img/vanish.png" alt="vanish"/></label>
+                <input type="checkbox" name="vanish" id="vanish" onclick="combinacion()"/>
+              </div>
+              <div class="logoscombinar">
+                <label for="durex" name="durex"><img src="img/durex.png" alt="Durex"/></label>
+                <input type="checkbox" name="durex" id="durex" onclick="combinacion()"/>
+              </div>
+              <div class="logoscombinar">
+                <label for="airweek" name="airweek"><img src="img/airweek.png" alt="Airweek"/></label>
+                <input type="checkbox" name="airweek" id="airweek" onclick="combinacion()"/>
+              </div>
+              <div class="combinacion-duplex"><span id="powerLotto" class="circle"></span></div>
+            </div>
             <input type="submit" value="Enviar combinación"/>
           </form>
 		  
@@ -71,9 +389,29 @@
             <input type="text" name="telefono" placeholder="Ingresa tu número de teléfono"/>
             <div class="sep"></div>
             <label>Selecciona tu combinación</label>
-            <input type="radio" name="combinacion" value="2" /><span>2x</span>
-            <input type="radio" name="combinacion" value="3" /><span>3x</span>
-            <input type="radio" name="combinacion" value="4" /><span>4x</span>
+            <div class="elige-combi-cajaM">
+              <div class="logoscombinarM">
+                <label for="morteinM" name="morteinM"><img src="img/mortein.png" alt="Mortein"/></label>
+                <input type="checkbox" name="morteinM" id="morteinM"/>
+              </div>
+              <div class="logoscombinarM">
+                <label for="nuggetM" name="nuggetM"><img src="img/nugget.png" alt="Nugget"/></label>
+                <input type="checkbox" name="nuggetM" id="nuggetM"/>
+              </div>
+              <div class="logoscombinarM">
+                <label for="vanishM" name="vanishM"><img src="img/vanish.png" alt="vanish"/></label>
+                <input type="checkbox" name="vanishM" id="vanishM"/>
+              </div>
+              <div class="logoscombinarM">
+                <label for="durexM" name="durexM"><img src="img/durex.png" alt="Durex"/></label>
+                <input type="checkbox" name="durexM" id="durexM"/>
+              </div>
+              <div class="logoscombinarM">
+                <label for="airweekM" name="airweekM"><img src="img/airweek.png" alt="Airweek"/></label>
+                <input type="checkbox" name="airweekM" id="airweekM"/>
+              </div>
+              <div class="combinacion-duplexM"><span class="circle">2x</span></div>
+            </div>
             <input type="submit" value="Enviar combinación"/>
           </form>
 		  
