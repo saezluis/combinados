@@ -131,45 +131,47 @@ header,.header{
         @include desde (web){
             display: block;
             position: absolute;
-            top: 0;
+            top: -20px;
             left: 0;
             z-index: 4;
         }
     }
     .birds{
         display: none;
-        @include desde (web){
-            display: block;
-            position: absolute;
-            left: 140px;
-            top: 113px;
-            width: 3%;
-        }
-        @include desde (sd){
-            top: 166px;
-        }
-        @include desde (hd){
-            left: 320px;
-            top: 222px;
-        }
+        // @include desde (web){
+        //     display: none;
+        //     position: absolute;
+        //     left: 140px;
+        //     top: 113px;
+        //     width: 3%;
+        // }
+        // @include desde (sd){
+        //     top: 166px;
+        //     display: none;
+        // }
+        // @include desde (hd){
+        //     left: 320px;
+        //     display: none;
+        //     top: 222px;
+        // }
     }
 
     .birdsC{
         display: none;
-        @include desde (web){
-            display: block;
-            position: absolute;
-            left: 140px;
-            top: 132px;
-            width: 3%;
-        }
-        @include desde (sd){
-            top: 166px;
-        }
-        @include desde (hd){
-            left: 320px;
-            top: 222px;
-        }
+        // @include desde (web){
+        //     display: none;
+        //     position: absolute;
+        //     left: 140px;
+        //     top: 132px;
+        //     width: 3%;
+        // }
+        // @include desde (sd){
+        //     top: 166px;
+        // }
+        // @include desde (hd){
+        //     left: 320px;
+        //     top: 222px;
+        // }
     }
 
 
@@ -250,6 +252,23 @@ header,.header{
             bottom: 110px;
         }        
     }
+    .silla3{
+        display: none;
+        @include desde (web){
+            position: absolute;
+            display: block;
+            width: 13%;
+            left: 60px;
+            bottom: 440px;
+        }
+        @include desde (sd){
+            bottom: 400px;
+        }
+        @include desde (hd){
+            left: 150px;
+            bottom: 280px;
+        }        
+    }
     .tango{
         display: none;
         @include desde (web){
@@ -280,7 +299,23 @@ header,.header{
             bottom: 170px;
         }
     }
-
+    .tango3{
+        display: none;
+        @include desde (web){
+            position: absolute;
+            display: block;
+            width: 15%;
+            right: 40px;
+            bottom: 498px;
+            z-index: 0;
+        }
+        @include desde (sd){
+            bottom: 433px;
+        }
+        @include desde (hd){
+            bottom: 330px;
+        }
+    }
 
     .sillaG{
         display: none;
@@ -446,9 +481,59 @@ header,.header{
         }
         @include desde (web){
             margin-top: 4em;
+            width: 80%;
         }
         @include desde (sd){
-            width: 55%;
+            width: 67%;
+        }
+        .elige-combi-caja{
+            width: 100%;
+            margin-bottom: 1em;
+            float: left;
+            position: relative;
+            .combinacion-duplex{
+                width: 100%;
+                height: auto;
+                text-align: center;
+                margin-top: 28px;
+                margin-bottom: 15px;
+                float: left;
+                span{
+                    font-size: 3em;
+                    color: #fff;
+                    border: 2px solid #fff;
+                    padding: 0.2em;
+                }
+            }
+        }
+        .logoscombinar{
+            //width: 69px;
+            float: left;
+            position: relative;
+            @include desde (tablet){
+                width: 63px;
+            }
+            @include desde (web){
+                width: 69px;
+            }
+            label{
+                width: 50px;
+                height: auto;
+                cursor: pointer;
+            }
+            input[type="checkbox"]{
+                position: absolute;
+                top: 59px;
+                left: 17px;
+            }
+            span.cantidad {
+                position: absolute;
+                top: 60px;
+                left: 38px;
+            }
+        }
+        .air{
+            margin-top: 1em;
         }
     }
     form#M, form#N{
@@ -528,7 +613,53 @@ header,.header{
             background: transparent;
             cursor: pointer;
         }
+        
+        .elige-combi-cajaM{
+            width: 100%;
+            margin-bottom: 1em;
+            float: left;
+            position: relative;
+            .combinacion-duplexM{
+                width: 100%;
+                height: auto;
+                text-align: center;
+                margin-top: 28px;
+                margin-bottom: 15px;
+                float: left;
+                span{
+                    font-size: 3em;
+                    color: #fff;
+                    border: 2px solid #fff;
+                    padding: 0.2em;
+                }
+            }
+        }
+
+        .logoscombinarM{
+            //width: 69px;
+            float: left;
+            position: relative;
+            width: 58px;
+            label{
+                width: 50px;
+                height: auto;
+                cursor: pointer;
+            }
+            input[type="checkbox"]{
+                position: absolute;
+                top: 59px;
+                left: 17px;
+            }
+            span.cantidad {
+                position: absolute;
+                top: 60px;
+                left: 38px;
+            }
+        }
+
+
     }//form
+
     
     //combinaciones
     p.combina-text{

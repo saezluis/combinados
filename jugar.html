@@ -14,11 +14,7 @@
       <div id="loader"></div>
     </div>
     <div class="menu_bar"><a href="#" class="bt-menu"><span><img src="img/menu.png"/></span>Menu</a></div>
-    <?php
-		include "menu.php";
-	?>
-	<!--
-	<nav>
+    <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="combinaciones.html">Combinaciones</a></li>
@@ -28,55 +24,90 @@
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
-	-->
     <header>
       <div class="ed-container">
         <div class="ed-item base-100 web-100 hd-100">
           <div class="logo-rekkit"><img src="img/logo-rekkit.png"/></div>
           <div class="logo-rekkitW"><img src="img/logo-rekkit.png"/></div>
           <div class="torres"><img src="img/torres.png"/></div>
-          <div class="birdsC"><img src="img/birds.png" alt=""/></div>
+          <div class="birds"><img src="img/birds.png" alt=""/></div>
           <div class="palmera"><img src="img/palmera.png"/></div><a href="index.html" class="logo"> <img src="img/logo.png"/></a>
           <div class="avion-left"><img src="img/avion-left.png"/></div>
           <div class="avion-right"><img src="img/avion-right.png"/></div>
-          <div class="silla2"><img src="img/silla.png" alt=""/></div>
-          <div class="tango2"><img src="img/tango.png" alt=""/></div>
+          <div class="silla3"><img src="img/silla.png" alt=""/></div>
+          <div class="tango3"><img src="img/tango.png" alt=""/></div>
         </div>
         <div class="ed-item base-100 tablet-50 tablet-order-2">
           <h1>Ganas tú, gano yo... <span>Ganamos los 2</span></h1>
-		  
-          <form id="N" method="POST" action="procesar-jugar.php">
+          <form id="N">
             <h2>Para participar, ingresar tus datos y número de factura </h2>
-            <input type="text" name="nro_factura" placeholder="Ingresa el número de factura"/>
-            <input type="text" name="nombre" placeholder="Ingresa tu nombre"/>
-            <input type="text" name="apellido" placeholder="Ingresa tu apellido"/>
-            <input type="text" name="telefono" placeholder="Ingresa tu número de teléfono"/>
+            <input type="text" placeholder="Ingresa el número de factura"/>
+            <input type="text" placeholder="Ingresa tu nombre"/>
+            <input type="text" placeholder="Ingresa tu apellido"/>
+            <input type="text" placeholder="Ingresa tu número de teléfono"/>
             <div class="sep"></div>
-            <label>Selecciona tu combinación</label>
-            <input type="radio" name="combinacion" value="2" /><span>2x</span>
-            <input type="radio" name="combinacion" value="3" /><span>3x</span>
-            <input type="radio" name="combinacion" value="4" /><span>4x</span>
+            <label>Selecciona los logos de la compra que hiciste</label>
+            <div class="elige-combi-caja">
+              <div class="logoscombinar">
+                <label for="mortein" name="mortein"><img src="img/mortein.png" alt="Mortein"/></label>
+                <input type="checkbox" name="mortein" id="mortein"/>
+              </div>
+              <div class="logoscombinar">
+                <label for="nugget" name="nugget"><img src="img/nugget.png" alt="Nugget"/></label>
+                <input type="checkbox" name="nugget" id="nugget"/>
+              </div>
+              <div class="logoscombinar">
+                <label for="vanish" name="vanish"><img src="img/vanish.png" alt="vanish"/></label>
+                <input type="checkbox" name="vanish" id="vanish"/>
+              </div>
+              <div class="logoscombinar">
+                <label for="durex" name="durex"><img src="img/durex.png" alt="Durex"/></label>
+                <input type="checkbox" name="durex" id="durex"/>
+              </div>
+              <div class="logoscombinar">
+                <label for="airweek" name="airweek"><img src="img/airweek.png" alt="Airweek"/></label>
+                <input type="checkbox" name="airweek" id="airweek"/>
+              </div>
+              <div class="combinacion-duplex"><span class="circle">2x</span></div>
+            </div>
             <input type="submit" value="Enviar combinación"/>
           </form>
-		  
         </div>
         <div class="ed-item base-100 tablet-50 tablet-order-1">
           <div class="personas"><img src="img/personas.png"/></div>
-		  
-          <form id="M" method="POST" action="procesar-jugar.php">
+          <form id="M">
             <h2>Para participar, debes ingresar el número de factura y tus datos</h2>
-            <input type="text" name="nro_factura" placeholder="Ingresa el número de factura"/>
-            <input type="text" name="nombre" placeholder="Ingresa tu nombre"/>
-            <input type="text" name="apellido" placeholder="Ingresa tu apellido"/>
-            <input type="text" name="telefono" placeholder="Ingresa tu número de teléfono"/>
+            <input type="text" placeholder="Ingresa el número de factura"/>
+            <input type="text" placeholder="Ingresa tu nombre"/>
+            <input type="text" placeholder="Ingresa tu apellido"/>
+            <input type="text" placeholder="Ingresa tu número de teléfono"/>
             <div class="sep"></div>
-            <label>Selecciona tu combinación</label>
-            <input type="radio" name="combinacion" value="2" /><span>2x</span>
-            <input type="radio" name="combinacion" value="3" /><span>3x</span>
-            <input type="radio" name="combinacion" value="4" /><span>4x</span>
+            <label>Selecciona los logos de la compra que hiciste</label>
+            <div class="elige-combi-cajaM">
+              <div class="logoscombinarM">
+                <label for="morteinM" name="morteinM"><img src="img/mortein.png" alt="Mortein"/></label>
+                <input type="checkbox" name="morteinM" id="morteinM"/>
+              </div>
+              <div class="logoscombinarM">
+                <label for="nuggetM" name="nuggetM"><img src="img/nugget.png" alt="Nugget"/></label>
+                <input type="checkbox" name="nuggetM" id="nuggetM"/>
+              </div>
+              <div class="logoscombinarM">
+                <label for="vanishM" name="vanishM"><img src="img/vanish.png" alt="vanish"/></label>
+                <input type="checkbox" name="vanishM" id="vanishM"/>
+              </div>
+              <div class="logoscombinarM">
+                <label for="durexM" name="durexM"><img src="img/durex.png" alt="Durex"/></label>
+                <input type="checkbox" name="durexM" id="durexM"/>
+              </div>
+              <div class="logoscombinarM">
+                <label for="airweekM" name="airweekM"><img src="img/airweek.png" alt="Airweek"/></label>
+                <input type="checkbox" name="airweekM" id="airweekM"/>
+              </div>
+              <div class="combinacion-duplexM"><span class="circle">2x</span></div>
+            </div>
             <input type="submit" value="Enviar combinación"/>
           </form>
-		  
         </div>
       </div>
     </header>

@@ -3686,15 +3686,14 @@ header, .header {
   position: relative;
   width: 100%;
   height: auto;
+  margin-top: 20px;
   background: url(../img/casa.jpg) repeat-x 1250px 80px/550%; }
   @media screen and (min-width: 768px) {
     header, .header {
-      background: url(../img/casa.jpg) repeat-x 1760px 140px/330%;
-      margin-top: 20px; } }
+      background: url(../img/casa.jpg) repeat-x 1760px 140px/330%; } }
   @media screen and (min-width: 1024px) {
     header, .header {
-      background: url(../img/casa.jpg) repeat-x 1760px 170px/110%;
-      margin-top: 0; } }
+      background: url(../img/casa.jpg) repeat-x 1760px 170px/110%; } }
   @media screen and (min-width: 1400px) {
     header, .header {
       background: url(../img/casa.jpg) repeat-x 2330px 170px/150%; } }
@@ -3737,38 +3736,13 @@ header, .header {
       header .palmera, .header .palmera {
         display: block;
         position: absolute;
-        top: 0;
+        top: -20px;
         left: 0;
         z-index: 4; } }
   header .birds, .header .birds {
     display: none; }
-    @media screen and (min-width: 1024px) {
-      header .birds, .header .birds {
-        display: block;
-        position: absolute;
-        left: 140px;
-        top: 113px;
-        width: 3%; } }
-    @media screen and (min-width: 1280px) {
-      header .birds, .header .birds {
-        top: 166px; } }
-    @media screen and (min-width: 1400px) {
-      header .birds, .header .birds {
-        left: 320px;
-        top: 222px; } }
   header .birdsC, .header .birdsC {
     display: none; }
-    @media screen and (min-width: 1024px) {
-      header .birdsC, .header .birdsC {
-        display: block;
-        position: absolute;
-        left: 140px;
-        top: 133px;
-        width: 3%; } }
-    @media screen and (min-width: 1400px) {
-      header .birdsC, .header .birdsC {
-        left: 320px;
-        top: 222px; } }
   header .torres, .header .torres {
     display: none; }
     @media screen and (min-width: 768px) {
@@ -3843,6 +3817,22 @@ header, .header {
       header .silla2, .header .silla2 {
         left: 150px;
         bottom: 110px; } }
+  header .silla3, .header .silla3 {
+    display: none; }
+    @media screen and (min-width: 1024px) {
+      header .silla3, .header .silla3 {
+        position: absolute;
+        display: block;
+        width: 13%;
+        left: 60px;
+        bottom: 440px; } }
+    @media screen and (min-width: 1280px) {
+      header .silla3, .header .silla3 {
+        bottom: 400px; } }
+    @media screen and (min-width: 1400px) {
+      header .silla3, .header .silla3 {
+        left: 150px;
+        bottom: 280px; } }
   header .tango, .header .tango {
     display: none; }
     @media screen and (min-width: 1024px) {
@@ -3871,6 +3861,22 @@ header, .header {
     @media screen and (min-width: 1400px) {
       header .tango2, .header .tango2 {
         bottom: 170px; } }
+  header .tango3, .header .tango3 {
+    display: none; }
+    @media screen and (min-width: 1024px) {
+      header .tango3, .header .tango3 {
+        position: absolute;
+        display: block;
+        width: 15%;
+        right: 40px;
+        bottom: 498px;
+        z-index: 0; } }
+    @media screen and (min-width: 1280px) {
+      header .tango3, .header .tango3 {
+        bottom: 433px; } }
+    @media screen and (min-width: 1400px) {
+      header .tango3, .header .tango3 {
+        bottom: 330px; } }
   header .sillaG, .header .sillaG {
     display: none; }
     @media screen and (min-width: 1024px) {
@@ -4007,10 +4013,51 @@ header, .header {
         z-index: 0; } }
     @media screen and (min-width: 1024px) {
       header form#N, .header form#N {
-        margin-top: 4em; } }
+        margin-top: 4em;
+        width: 80%; } }
     @media screen and (min-width: 1280px) {
       header form#N, .header form#N {
-        width: 55%; } }
+        width: 67%; } }
+    header form#N .elige-combi-caja, .header form#N .elige-combi-caja {
+      width: 100%;
+      margin-bottom: 1em;
+      float: left;
+      position: relative; }
+      header form#N .elige-combi-caja .combinacion-duplex, .header form#N .elige-combi-caja .combinacion-duplex {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 28px;
+        margin-bottom: 15px;
+        float: left; }
+        header form#N .elige-combi-caja .combinacion-duplex span, .header form#N .elige-combi-caja .combinacion-duplex span {
+          font-size: 3em;
+          color: #fff;
+          border: 2px solid #fff;
+          padding: 0.2em; }
+    header form#N .logoscombinar, .header form#N .logoscombinar {
+      float: left;
+      position: relative; }
+      @media screen and (min-width: 768px) {
+        header form#N .logoscombinar, .header form#N .logoscombinar {
+          width: 63px; } }
+      @media screen and (min-width: 1024px) {
+        header form#N .logoscombinar, .header form#N .logoscombinar {
+          width: 69px; } }
+      header form#N .logoscombinar label, .header form#N .logoscombinar label {
+        width: 50px;
+        height: auto;
+        cursor: pointer; }
+      header form#N .logoscombinar input[type="checkbox"], .header form#N .logoscombinar input[type="checkbox"] {
+        position: absolute;
+        top: 59px;
+        left: 17px; }
+      header form#N .logoscombinar span.cantidad, .header form#N .logoscombinar span.cantidad {
+        position: absolute;
+        top: 60px;
+        left: 38px; }
+    header form#N .air, .header form#N .air {
+      margin-top: 1em; }
   header form#M, header form#N, .header form#M, .header form#N {
     padding: 10px 15px;
     background: rgba(183, 34, 113, 0.8);
@@ -4073,6 +4120,39 @@ header, .header {
       text-transform: uppercase;
       background: transparent;
       cursor: pointer; }
+    header form#M .elige-combi-cajaM, header form#N .elige-combi-cajaM, .header form#M .elige-combi-cajaM, .header form#N .elige-combi-cajaM {
+      width: 100%;
+      margin-bottom: 1em;
+      float: left;
+      position: relative; }
+      header form#M .elige-combi-cajaM .combinacion-duplexM, header form#N .elige-combi-cajaM .combinacion-duplexM, .header form#M .elige-combi-cajaM .combinacion-duplexM, .header form#N .elige-combi-cajaM .combinacion-duplexM {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 28px;
+        margin-bottom: 15px;
+        float: left; }
+        header form#M .elige-combi-cajaM .combinacion-duplexM span, header form#N .elige-combi-cajaM .combinacion-duplexM span, .header form#M .elige-combi-cajaM .combinacion-duplexM span, .header form#N .elige-combi-cajaM .combinacion-duplexM span {
+          font-size: 3em;
+          color: #fff;
+          border: 2px solid #fff;
+          padding: 0.2em; }
+    header form#M .logoscombinarM, header form#N .logoscombinarM, .header form#M .logoscombinarM, .header form#N .logoscombinarM {
+      float: left;
+      position: relative;
+      width: 58px; }
+      header form#M .logoscombinarM label, header form#N .logoscombinarM label, .header form#M .logoscombinarM label, .header form#N .logoscombinarM label {
+        width: 50px;
+        height: auto;
+        cursor: pointer; }
+      header form#M .logoscombinarM input[type="checkbox"], header form#N .logoscombinarM input[type="checkbox"], .header form#M .logoscombinarM input[type="checkbox"], .header form#N .logoscombinarM input[type="checkbox"] {
+        position: absolute;
+        top: 59px;
+        left: 17px; }
+      header form#M .logoscombinarM span.cantidad, header form#N .logoscombinarM span.cantidad, .header form#M .logoscombinarM span.cantidad, .header form#N .logoscombinarM span.cantidad {
+        position: absolute;
+        top: 60px;
+        left: 38px; }
   header p.combina-text, .header p.combina-text {
     box-shadow: 0 0 1px rgba(43, 187, 252, 0.76), 0 0 5px #2ecdfd, inset 0 0 rgba(196, 240, 254, 0.75);
     border: solid 1px rgba(47, 189, 226, 0.85);

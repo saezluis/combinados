@@ -14,13 +14,7 @@
       <div id="loader"></div>
     </div>
     <div class="menu_bar"><a href="#" class="bt-menu"><span><img src="img/menu.png"/></span>Menu</a></div>
-    <?php
-		
-		include "menu.php";
-	
-	?>
-	<!--
-	<nav>
+    <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="combinaciones.html">Combinaciones</a></li>
@@ -30,40 +24,51 @@
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
-	-->
     <header>
       <div class="ed-container">
-        <div class="ed-item base-100 web-100">
+        <div class="ed-item base-100 web-100 hd-100">
           <div class="logo-rekkit"><img src="img/logo-rekkit.png"/></div>
           <div class="logo-rekkitW"><img src="img/logo-rekkit.png"/></div>
           <div class="torres"><img src="img/torres.png"/></div>
-          <div class="birdsC"><img src="img/birds.png" alt=""/></div>
+          <div class="birds"><img src="img/birds.png" alt=""/></div>
           <div class="palmera"><img src="img/palmera.png"/></div><a href="index.html" class="logo"> <img src="img/logo.png"/></a>
           <div class="avion-left"><img src="img/avion-left.png"/></div>
           <div class="avion-right"><img src="img/avion-right.png"/></div>
-          <div class="silla"><img src="img/silla.png" alt=""/></div>
-          <div class="tango"><img src="img/tango.png" alt=""/></div>
+          <div class="silla2"><img src="img/silla.png" alt=""/></div>
+          <div class="tango2"><img src="img/tango.png" alt=""/></div>
         </div>
         <div class="ed-item base-100 tablet-50 tablet-order-2">
           <h1>Ganas tú, gano yo... <span>Ganamos los 2</span></h1>
-          <div class="claim-t">
-            <p>
-              Ingresa el número de factura y participa por
-              espectaculares premios diarios y 3 increíbles
-              viajes para 2 personas.
-            </p>
-          </div><a href="jugar.php" class="jugar-t">PARTICIPAR</a>
+          <form id="N">
+            <h2>Para participar, ingresar tus datos y número de factura </h2>
+            <input type="text" placeholder="Ingresa el número de factura"/>
+            <input type="text" placeholder="Ingresa tu nombre"/>
+            <input type="text" placeholder="Ingresa tu apellido"/>
+            <input type="text" placeholder="Ingresa tu número de teléfono"/>
+            <div class="sep"></div>
+            <label>Selecciona tu combinación</label>
+            <div class="logoscombinar">
+              <label><img src="img/mortein.png" alt="Mortein"/></label>
+              <input type="radio"/><span>2x</span>
+            </div>
+            <input type="submit" value="Enviar combinación"/>
+          </form>
         </div>
         <div class="ed-item base-100 tablet-50 tablet-order-1">
-          <div class="bodegon"><img src="img/bodegon.png"/></div>
           <div class="personas"><img src="img/personas.png"/></div>
-          <div class="claim">
-            <p>
-              Ingresa el número de factura y participa por
-              espectaculares premios diarios y 3 increíbles
-              viajes para 2 personas.
-            </p>
-          </div><a href="jugar.php" class="jugar">PARTICIPAR</a>
+          <form id="M">
+            <h2>Para participar, debes ingresar el número de factura y tus datos</h2>
+            <input type="text" placeholder="Ingresa el número de factura"/>
+            <input type="text" placeholder="Ingresa tu nombre"/>
+            <input type="text" placeholder="Ingresa tu apellido"/>
+            <input type="text" placeholder="Ingresa tu número de teléfono"/>
+            <div class="sep"></div>
+            <label>Selecciona tu combinación</label>
+            <input type="radio"/><span>2x</span>
+            <input type="radio"/><span>3x</span>
+            <input type="radio"/><span>4x</span>
+            <input type="submit" value="Enviar combinación"/>
+          </form>
         </div>
       </div>
     </header>
