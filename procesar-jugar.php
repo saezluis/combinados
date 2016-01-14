@@ -5,7 +5,7 @@
 	$apellido = $_REQUEST['apellido'];
 	$telefono = $_REQUEST['telefono'];
 	
-	$combinacion = $_REQUEST['combinacion'];
+	$combinacion = $_REQUEST['combinacion_send'];
 	
 	date_default_timezone_set("America/Santiago");
 	$date =  date("Y-m-d h:i:sa");

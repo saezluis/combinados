@@ -17,27 +17,63 @@
 			//---- Combinaciones 0X
 			if(mortein.checked == false && nugget.checked == false && vanish.checked == false && durex.checked == false && airweek.checked == false){
 				$("#powerLotto").text("0X");
+				document.getElementById("copy_combination").value = 0;				
+			}			
+			if(morteinM.checked == false && nuggetM.checked == false && vanishM.checked == false && durexM.checked == false && airweekM.checked == false){
+				$("#powerLottoM").text("0X");				
+				document.getElementById("copy_combinationM").value = 0;
 			}
+			//---------------------------------------------------------
 			
 			if(mortein.checked == true && nugget.checked == false && vanish.checked == false && durex.checked == false && airweek.checked == false){
 				$("#powerLotto").text("0X");
+				document.getElementById("copy_combination").value = 0;
+			}			
+			if(morteinM.checked == true && nuggetM.checked == false && vanishM.checked == false && durexM.checked == false && airweekM.checked == false){
+				$("#powerLottoM").text("0X");
+				document.getElementById("copy_combinationM").value = 0;
 			}
+			//---------------------------------------------------------
 			
 			if(mortein.checked == false && nugget.checked == true && vanish.checked == false && durex.checked == false && airweek.checked == false){
 				$("#powerLotto").text("0X");
+				document.getElementById("copy_combination").value = 0;
+			}			
+			if(morteinM.checked == false && nuggetM.checked == true && vanishM.checked == false && durexM.checked == false && airweekM.checked == false){
+				$("#powerLottoM").text("0X");
+				document.getElementById("copy_combinationM").value = 0;
 			}
+			//---------------------------------------------------------
 			
 			if(mortein.checked == false && nugget.checked == false && vanish.checked == true && durex.checked == false && airweek.checked == false){
 				$("#powerLotto").text("0X");
+				document.getElementById("copy_combination").value = 0;
 			}
+			if(morteinM.checked == false && nuggetM.checked == false && vanishM.checked == true && durexM.checked == false && airweekM.checked == false){
+				$("#powerLottoM").text("0X");
+				document.getElementById("copy_combinationM").value = 0;
+			}
+			//---------------------------------------------------------
 			
 			if(mortein.checked == false && nugget.checked == false && vanish.checked == false && durex.checked == true && airweek.checked == false){
 				$("#powerLotto").text("0X");
+				document.getElementById("copy_combination").value = 0;
 			}
+			if(morteinM.checked == false && nuggetM.checked == false && vanishM.checked == false && durexM.checked == true && airweekM.checked == false){
+				$("#powerLottoM").text("0X");
+				document.getElementById("copy_combinationM").value = 0;
+			}
+			//---------------------------------------------------------
 			
 			if(mortein.checked == false && nugget.checked == false && vanish.checked == false && durex.checked == false && airweek.checked == true){
 				$("#powerLotto").text("0X");
+				document.getElementById("copy_combination").value = 0;
 			}
+			if(morteinM.checked == false && nuggetM.checked == false && vanishM.checked == false && durexM.checked == false && airweekM.checked == true){
+				$("#powerLottoM").text("0X");
+				document.getElementById("copy_combinationM").value = 0;
+			}
+			//---------------------------------------------------------
 			
 			//mortein	nugget 	vanish 	durex 	airweek
 			
@@ -46,26 +82,58 @@
 			if(mortein.checked == true){
 				if( nugget.checked == true && vanish.checked == false && durex.checked == false && airweek.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
 				}
 			}
+			if(morteinM.checked == true){
+				if( nuggetM.checked == true && vanishM.checked == false && durexM.checked == false && airweekM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(mortein.checked == true){
 				if( nugget.checked == false && vanish.checked == true && durex.checked == false && airweek.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
 				}
 			}
+			if(morteinM.checked == true){
+				if( nuggetM.checked == false && vanishM.checked == true && durexM.checked == false && airweekM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(mortein.checked == true){
 				if( nugget.checked == false && vanish.checked == false && durex.checked == true && airweek.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
 				}
 			}
+			if(morteinM.checked == true){
+				if( nuggetM.checked == false && vanishM.checked == false && durexM.checked == true && airweekM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(mortein.checked == true){
 				if( nugget.checked == false && vanish.checked == false && durex.checked == false && airweek.checked == true){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
 				}
 			}
+			if(morteinM.checked == true){
+				if( nuggetM.checked == false && vanishM.checked == false && durexM.checked == false && airweekM.checked == true){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+				}
+			}
+			//---------------------------------------------------------
 			
 			//mortein	nugget 	vanish 	durex 	airweek
 			
@@ -74,26 +142,66 @@
 			if(nugget.checked == true){
 				if( mortein.checked == true && vanish.checked == false && durex.checked == false && airweek.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(nuggetM.checked == true){
+				if( morteinM.checked == true && vanishM.checked == false && durexM.checked == false && airweekM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(nugget.checked == true){
 				if( mortein.checked == false && vanish.checked == true && durex.checked == false && airweek.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(nuggetM.checked == true){
+				if( morteinM.checked == false && vanishM.checked == true && durexM.checked == false && airweekM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(nugget.checked == true){
 				if( mortein.checked == false && vanish.checked == false && durex.checked == true && airweek.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(nuggetM.checked == true){
+				if( morteinM.checked == false && vanishM.checked == false && durexM.checked == true && airweekM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(nugget.checked == true){
 				if( mortein.checked == false && vanish.checked == false && durex.checked == false && airweek.checked == true){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(nuggetM.checked == true){
+				if( morteinM.checked == false && vanishM.checked == false && durexM.checked == false && airweekM.checked == true){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			//mortein	nugget 	vanish 	durex 	airweek
 			
@@ -102,26 +210,66 @@
 			if(vanish.checked == true){
 				if( mortein.checked == true && nugget.checked == false && durex.checked == false && airweek.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(vanishM.checked == true){
+				if( morteinM.checked == true && nuggetM.checked == false && durexM.checked == false && airweekM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(vanish.checked == true){
 				if( mortein.checked == false && nugget.checked == true && durex.checked == false && airweek.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(vanishM.checked == true){
+				if( morteinM.checked == false && nuggetM.checked == true && durexM.checked == false && airweekM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(vanish.checked == true){
 				if( mortein.checked == false && nugget.checked == false && durex.checked == true && airweek.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(vanishM.checked == true){
+				if( morteinM.checked == false && nuggetM.checked == false && durexM.checked == true && airweekM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(vanish.checked == true){
 				if( mortein.checked == false && nugget.checked == false && durex.checked == false && airweek.checked == true){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(vanishM.checked == true){
+				if( morteinM.checked == false && nuggetM.checked == false && durexM.checked == false && airweekM.checked == true){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			//mortein	nugget 	vanish 	durex 	airweek
 			
@@ -130,26 +278,66 @@
 			if(durex.checked == true){
 				if( mortein.checked == true && nugget.checked == false && vanish.checked == false && airweek.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(durexM.checked == true){
+				if( morteinM.checked == true && nuggetM.checked == false && vanishM.checked == false && airweekM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(durex.checked == true){
 				if( mortein.checked == false && nugget.checked == true && vanish.checked == false && airweek.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(durexM.checked == true){
+				if( morteinM.checked == false && nuggetM.checked == true && vanishM.checked == false && airweekM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(durex.checked == true){
 				if( mortein.checked == false && nugget.checked == false && vanish.checked == true && airweek.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(durexM.checked == true){
+				if( morteinM.checked == false && nuggetM.checked == false && vanishM.checked == true && airweekM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(durex.checked == true){
 				if( mortein.checked == false && nugget.checked == false && vanish.checked == false && airweek.checked == true){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(durexM.checked == true){
+				if( morteinM.checked == false && nuggetM.checked == false && vanishM.checked == false && airweekM.checked == true){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			//mortein	nugget 	vanish 	durex 	airweek
 			
@@ -158,26 +346,66 @@
 			if(airweek.checked == true){
 				if( mortein.checked == true && nugget.checked == false && vanish.checked == false && durex.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(airweekM.checked == true){
+				if( morteinM.checked == true && nuggetM.checked == false && vanishM.checked == false && durexM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(airweek.checked == true){
 				if( mortein.checked == false && nugget.checked == true && vanish.checked == false && durex.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(airweekM.checked == true){
+				if( morteinM.checked == false && nuggetM.checked == true && vanishM.checked == false && durexM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(airweek.checked == true){
 				if( mortein.checked == false && nugget.checked == false && vanish.checked == true && durex.checked == false){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(airweekM.checked == true){
+				if( morteinM.checked == false && nuggetM.checked == false && vanishM.checked == true && durexM.checked == false){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(airweek.checked == true){
 				if( mortein.checked == false && nugget.checked == false && vanish.checked == false && durex.checked == true){
 					$("#powerLotto").text("2X");
+					document.getElementById("copy_combination").value = 2;
+					
 				}
 			}
+			if(airweekM.checked == true){
+				if( morteinM.checked == false && nuggetM.checked == false && vanishM.checked == false && durexM.checked == true){
+					$("#powerLottoM").text("2X");
+					document.getElementById("copy_combinationM").value = 2;
+					
+				}
+			}
+			//---------------------------------------------------------
 			
 			//mortein	nugget 	vanish 	durex 	airweek
 			
@@ -186,20 +414,45 @@
 			if(mortein.checked == true && nugget.checked == true){
 				if(vanish.checked == true && durex.checked == false && airweek.checked == false){
 					$("#powerLotto").text("3X");
+					document.getElementById("copy_combination").value = 3;
 				}
 			}
+			if(morteinM.checked == true && nuggetM.checked == true){
+				if(vanishM.checked == true && durexM.checked == false && airweekM.checked == false){
+					$("#powerLottoM").text("3X");
+					document.getElementById("copy_combinationM").value = 3;
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(mortein.checked == true && nugget.checked == true){
 				if(vanish.checked == false && durex.checked == true && airweek.checked == false){
 					$("#powerLotto").text("3X");
+					document.getElementById("copy_combination").value = 3;
 				}
 			}
+			if(morteinM.checked == true && nuggetM.checked == true){
+				if(vanishM.checked == false && durexM.checked == true && airweekM.checked == false){
+					$("#powerLottoM").text("3X");
+					document.getElementById("copy_combinationM").value = 3;
+				}
+			}
+			//---------------------------------------------------------
+			
 			
 			if(mortein.checked == true && nugget.checked == true){
 				if(vanish.checked == false && durex.checked == false && airweek.checked == true){
 					$("#powerLotto").text("3X");
+					document.getElementById("copy_combination").value = 3;
 				}
 			}
+			if(morteinM.checked == true && nuggetM.checked == true){
+				if(vanishM.checked == false && durexM.checked == false && airweekM.checked == true){
+					$("#powerLottoM").text("3X");
+					document.getElementById("copy_combinationM").value = 3;
+				}
+			}
+			//---------------------------------------------------------
 			
 			//mortein	nugget 	vanish 	durex 	airweek
 			
@@ -208,20 +461,44 @@
 			if(nugget.checked == true && vanish.checked == true){
 				if(mortein.checked == true && durex.checked == false && airweek.checked == false){
 					$("#powerLotto").text("3X");
+					document.getElementById("copy_combination").value = 3;
 				}
 			}
+			if(nuggetM.checked == true && vanishM.checked == true){
+				if(morteinM.checked == true && durexM.checked == false && airweekM.checked == false){
+					$("#powerLottoM").text("3X");
+					document.getElementById("copy_combinationM").value = 3;
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(nugget.checked == true && vanish.checked == true){
 				if(mortein.checked == false && durex.checked == true && airweek.checked == false){
 					$("#powerLotto").text("3X");
+					document.getElementById("copy_combination").value = 3;
 				}
-			}	
+			}
+			if(nuggetM.checked == true && vanishM.checked == true){
+				if(morteinM.checked == false && durexM.checked == true && airweekM.checked == false){
+					$("#powerLottoM").text("3X");
+					document.getElementById("copy_combinationM").value = 3;
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(nugget.checked == true && vanish.checked == true){
 				if(mortein.checked == false && durex.checked == false && airweek.checked == true){
 					$("#powerLotto").text("3X");
+					document.getElementById("copy_combination").value = 3;
 				}
 			}
+			if(nuggetM.checked == true && vanishM.checked == true){
+				if(morteinM.checked == false && durexM.checked == false && airweekM.checked == true){
+					$("#powerLottoM").text("3X");
+					document.getElementById("copy_combinationM").value = 3;
+				}
+			}
+			//---------------------------------------------------------
 			
 			//mortein	nugget 	vanish 	durex 	airweek
 			
@@ -230,20 +507,44 @@
 			if(vanish.checked == true && durex.checked == true){
 				if(mortein.checked == true && nugget.checked == false && airweek.checked == false){
 					$("#powerLotto").text("3X");
+					document.getElementById("copy_combination").value = 3;
 				}
 			}
+			if( vanishM.checked == true && durexM.checked == true){
+				if( morteinM.checked == true && nuggetM.checked == false && airweekM.checked == false){
+					$("#powerLottoM").text("3X");
+					document.getElementById("copy_combinationM").value = 3;
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(vanish.checked == true && durex.checked == true){
 				if(mortein.checked == false && nugget.checked == true && airweek.checked == false){
 					$("#powerLotto").text("3X");
+					document.getElementById("copy_combination").value = 3;
 				}
 			}
+			if( vanishM.checked == true && durexM.checked == true){
+				if( morteinM.checked == false && nuggetM.checked == true && airweekM.checked == false){
+					$("#powerLottoM").text("3X");
+					document.getElementById("copy_combinationM").value = 3;
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(vanish.checked == true && durex.checked == true){
 				if(mortein.checked == false && nugget.checked == false && airweek.checked == true){
 					$("#powerLotto").text("3X");
+					document.getElementById("copy_combination").value = 3;
 				}
 			}
+			if( vanishM.checked == true && durexM.checked == true){
+				if( morteinM.checked == false && nuggetM.checked == false && airweekM.checked == true){
+					$("#powerLottoM").text("3X");
+					document.getElementById("copy_combinationM").value = 3;
+				}
+			}
+			//---------------------------------------------------------
 			
 			//mortein	nugget 	vanish 	durex 	airweek
 			
@@ -252,20 +553,44 @@
 			if(durex.checked == true && airweek.checked == true){
 				if(mortein.checked == true && nugget.checked == false && vanish.checked == false){
 					$("#powerLotto").text("3X");
+					document.getElementById("copy_combination").value = 3;
 				}
 			}
+			if(durexM.checked == true && airweekM.checked == true){
+				if(morteinM.checked == true && nuggetM.checked == false && vanishM.checked == false){
+					$("#powerLottoM").text("3X");
+					document.getElementById("copy_combinationM").value = 3;
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(durex.checked == true && airweek.checked == true){
 				if(mortein.checked == false && nugget.checked == true && vanish.checked == false){
 					$("#powerLotto").text("3X");
+					document.getElementById("copy_combination").value = 3;
 				}
 			}
+			if(durexM.checked == true && airweekM.checked == true){
+				if(morteinM.checked == false && nuggetM.checked == true && vanishM.checked == false){
+					$("#powerLottoM").text("3X");
+					document.getElementById("copy_combinationM").value = 3;
+				}
+			}
+			//---------------------------------------------------------
 			
 			if(durex.checked == true && airweek.checked == true){
 				if(mortein.checked == false && nugget.checked == false && vanish.checked == true){
 					$("#powerLotto").text("3X");
+					document.getElementById("copy_combination").value = 3;
 				}
 			}
+			if(durexM.checked == true && airweekM.checked == true){
+				if(morteinM.checked == false && nuggetM.checked == false && vanishM.checked == true){
+					$("#powerLottoM").text("3X");
+					document.getElementById("copy_combinationM").value = 3;
+				}
+			}
+			//---------------------------------------------------------
 			
 			//mortein	nugget 	vanish 	durex 	airweek
 			
@@ -273,34 +598,75 @@
 			//---- mortein y vanish y airweek-------------
 			if(mortein.checked == true && vanish.checked == true && airweek.checked == true){
 					$("#powerLotto").text("3X");
+					document.getElementById("copy_combination").value = 3;
 			}
+			if(morteinM.checked == true && vanishM.checked == true && airweekM.checked == true){
+					$("#powerLottoM").text("3X");
+					document.getElementById("copy_combinationM").value = 3;
+			}
+			//---------------------------------------------------------
 			
 			//mortein	nugget 	vanish 	durex 	airweek
 			
 			//----Combinaciones 4x -----
 			if(mortein.checked == true && nugget.checked == true && vanish.checked == true && durex.checked == true && airweek.checked == false){
 					$("#powerLotto").text("4X");
+					document.getElementById("copy_combination").value = 4;
 			}
+			if(morteinM.checked == true && nuggetM.checked == true && vanishM.checked == true && durexM.checked == true && airweekM.checked == false){
+					$("#powerLottoM").text("4X");
+					document.getElementById("copy_combinationM").value = 4;
+			}
+			//---------------------------------------------------------
 			
 			if(mortein.checked == false && nugget.checked == true && vanish.checked == true && durex.checked == true && airweek.checked == true){
 					$("#powerLotto").text("4X");
+					document.getElementById("copy_combination").value = 4;
 			}
+			if(morteinM.checked == false && nuggetM.checked == true && vanishM.checked == true && durexM.checked == true && airweekM.checked == true){
+					$("#powerLottoM").text("4X");
+					document.getElementById("copy_combinationM").value = 4;
+			}
+			//---------------------------------------------------------
 			
 			if(mortein.checked == true && nugget.checked == true && vanish.checked == false && durex.checked == true && airweek.checked == true){
 					$("#powerLotto").text("4X");
+					document.getElementById("copy_combination").value = 4;
 			}
+			if(morteinM.checked == true && nuggetM.checked == true && vanishM.checked == false && durexM.checked == true && airweekM.checked == true){
+					$("#powerLottoM").text("4X");
+					document.getElementById("copy_combinationM").value = 4;
+			}
+			//---------------------------------------------------------
 			
 			if(mortein.checked == true && nugget.checked == true && vanish.checked == true && durex.checked == false && airweek.checked == true){
 					$("#powerLotto").text("4X");
+					document.getElementById("copy_combination").value = 4;
 			}
+			if(morteinM.checked == true && nuggetM.checked == true && vanishM.checked == true && durexM.checked == false && airweekM.checked == true){
+					$("#powerLottoM").text("4X");
+					document.getElementById("copy_combinationM").value = 4;
+			}
+			//---------------------------------------------------------
 			
 			if(mortein.checked == true && nugget.checked == false && vanish.checked == true && durex.checked == true && airweek.checked == true){
 					$("#powerLotto").text("4X");
+					document.getElementById("copy_combination").value = 4;
 			}
+			if(morteinM.checked == true && nuggetM.checked == false && vanishM.checked == true && durexM.checked == true && airweekM.checked == true){
+					$("#powerLottoM").text("4X");
+					document.getElementById("copy_combinationM").value = 4;
+			}
+			//---------------------------------------------------------
 			
 			//----Combinaciones 5x -----
 			if(mortein.checked == true && nugget.checked == true && vanish.checked == true && durex.checked == true && airweek.checked == true){
 					$("#powerLotto").text("4X");
+					document.getElementById("copy_combination").value = 4;
+			}
+			if(morteinM.checked == true && nuggetM.checked == true && vanishM.checked == true && durexM.checked == true && airweekM.checked == true){
+					$("#powerLottoM").text("4X");
+					document.getElementById("copy_combinationM").value = 4;
 			}
 			
 		}
@@ -373,6 +739,7 @@
                 <input type="checkbox" name="airweek" id="airweek" onclick="combinacion()"/>
               </div>
               <div class="combinacion-duplex"><span id="powerLotto" class="circle"></span></div>
+			  <input type="text" name="combinacion_send" value="" id="copy_combination" >
             </div>
             <input type="submit" value="Enviar combinación"/>
           </form>
@@ -392,25 +759,26 @@
             <div class="elige-combi-cajaM">
               <div class="logoscombinarM">
                 <label for="morteinM" name="morteinM"><img src="img/mortein.png" alt="Mortein"/></label>
-                <input type="checkbox" name="morteinM" id="morteinM"/>
+                <input type="checkbox" name="morteinM" id="morteinM" onclick="combinacion()"/>
               </div>
               <div class="logoscombinarM">
                 <label for="nuggetM" name="nuggetM"><img src="img/nugget.png" alt="Nugget"/></label>
-                <input type="checkbox" name="nuggetM" id="nuggetM"/>
+                <input type="checkbox" name="nuggetM" id="nuggetM" onclick="combinacion()"/>
               </div>
               <div class="logoscombinarM">
                 <label for="vanishM" name="vanishM"><img src="img/vanish.png" alt="vanish"/></label>
-                <input type="checkbox" name="vanishM" id="vanishM"/>
+                <input type="checkbox" name="vanishM" id="vanishM" onclick="combinacion()"/>
               </div>
               <div class="logoscombinarM">
                 <label for="durexM" name="durexM"><img src="img/durex.png" alt="Durex"/></label>
-                <input type="checkbox" name="durexM" id="durexM"/>
+                <input type="checkbox" name="durexM" id="durexM" onclick="combinacion()"/>
               </div>
               <div class="logoscombinarM">
                 <label for="airweekM" name="airweekM"><img src="img/airweek.png" alt="Airweek"/></label>
-                <input type="checkbox" name="airweekM" id="airweekM"/>
+                <input type="checkbox" name="airweekM" id="airweekM" onclick="combinacion()"/>
               </div>
-              <div class="combinacion-duplexM"><span class="circle">2x</span></div>
+              <div class="combinacion-duplexM"><span id="powerLottoM" class="circle"></span></div>
+			  <input type="text" name="combinacion_send" value="" id="copy_combinationM" >
             </div>
             <input type="submit" value="Enviar combinación"/>
           </form>
