@@ -738,11 +738,7 @@
                 <label for="airweek" name="airweek"><img src="img/airweek.png" alt="Airweek"/></label>
                 <input type="checkbox" name="airweek" id="airweek" onclick="combinacion()"/>
               </div>
-              <div class="combinacion-duplex">
-				<span class="n-texto-implicitoL">esta combinación <br/> multiplica</span>
-              <span id="powerLotto" class="circle"></span>
-              <span class="n-texto-implicitoR">tus opciones <br/> de ganar</span>
-              </div>
+              <div class="combinacion-duplex"><span id="powerLotto" class="circle"></span></div>
 			  <input type="text" name="combinacion_send" value="" id="copy_combination" hidden=hidden>
             </div>
             <input type="submit" value="Enviar combinación"/>
@@ -781,11 +777,7 @@
                 <label for="airweekM" name="airweekM"><img src="img/airweek.png" alt="Airweek"/></label>
                 <input type="checkbox" name="airweekM" id="airweekM" onclick="combinacion()"/>
               </div>
-              <div class="combinacion-duplexM">
-				<span class="texto-implicitoL">esta combinación multiplica</span>
-              <span id="powerLottoM" class="circle"></span>
-				<span class="texto-implicitoR">tus opciones de ganar</span>
-              </div>
+              <div class="combinacion-duplexM"><span id="powerLottoM" class="circle"></span></div>
 			  <input type="text" name="combinacion_send" value="" id="copy_combinationM" hidden=hidden>
             </div>
             <input type="submit" value="Enviar combinación"/>

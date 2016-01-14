@@ -4035,6 +4035,23 @@ header, .header {
           color: #fff;
           border: 2px solid #fff;
           padding: 0.2em; }
+        header form#N .elige-combi-caja .combinacion-duplex span.n-texto-implicitoL, .header form#N .elige-combi-caja .combinacion-duplex span.n-texto-implicitoL {
+          font-size: 0.8em;
+          border: none;
+          display: block;
+          text-align: left;
+          text-transform: uppercase;
+          position: absolute;
+          bottom: 20px; }
+        header form#N .elige-combi-caja .combinacion-duplex span.n-texto-implicitoR, .header form#N .elige-combi-caja .combinacion-duplex span.n-texto-implicitoR {
+          font-size: 0.8em;
+          border: none;
+          display: block;
+          text-align: left;
+          text-transform: uppercase;
+          position: absolute;
+          bottom: 20px;
+          right: 25px; }
     header form#N .logoscombinar, .header form#N .logoscombinar {
       float: left;
       position: relative; }
@@ -4137,6 +4154,20 @@ header, .header {
           color: #fff;
           border: 2px solid #fff;
           padding: 0.2em; }
+        header form#M .elige-combi-cajaM .combinacion-duplexM span.texto-implicitoL, header form#N .elige-combi-cajaM .combinacion-duplexM span.texto-implicitoL, .header form#M .elige-combi-cajaM .combinacion-duplexM span.texto-implicitoL, .header form#N .elige-combi-cajaM .combinacion-duplexM span.texto-implicitoL {
+          font-size: 0.9em;
+          border: none;
+          display: block;
+          text-align: center;
+          padding-bottom: 1.3em;
+          text-transform: uppercase; }
+        header form#M .elige-combi-cajaM .combinacion-duplexM span.texto-implicitoR, header form#N .elige-combi-cajaM .combinacion-duplexM span.texto-implicitoR, .header form#M .elige-combi-cajaM .combinacion-duplexM span.texto-implicitoR, .header form#N .elige-combi-cajaM .combinacion-duplexM span.texto-implicitoR {
+          font-size: 0.9em;
+          border: none;
+          display: block;
+          text-align: center;
+          padding-top: 1.3em;
+          text-transform: uppercase; }
     header form#M .logoscombinarM, header form#N .logoscombinarM, .header form#M .logoscombinarM, .header form#N .logoscombinarM {
       float: left;
       position: relative;
