@@ -36,7 +36,7 @@
           <div class="logo-rekkitW"><img src="img/logo-rekkit.png"/></div>
           <div class="torres"><img src="img/torres.png"/></div>
           <div class="birdsC"><img src="img/birds.png" alt=""/></div>
-          <div class="palmera"><img src="img/palmera.png"/></div><a href="index.html" class="logo"> <img src="img/logo.png"/></a>
+          <div class="palmera"><img src="img/palmera.png"/></div><a href="index.php" class="logo"> <img src="img/logo.png"/></a>
           <div class="avion-left"><img src="img/avion-left.png"/></div>
           <div class="avion-right"><img src="img/avion-right.png"/></div>
           <div class="silla2"><img src="img/silla.png" alt=""/></div>

@@ -700,7 +700,7 @@
           <div class="logo-rekkitW"><img src="img/logo-rekkit.png"/></div>
           <div class="torres"><img src="img/torres.png"/></div>
           <div class="birdsC"><img src="img/birds.png" alt=""/></div>
-          <div class="palmera"><img src="img/palmera.png"/></div><a href="index.html" class="logo"> <img src="img/logo.png"/></a>
+          <div class="palmera"><img src="img/palmera.png"/></div><a href="index.php" class="logo"> <img src="img/logo.png"/></a>
           <div class="avion-left"><img src="img/avion-left.png"/></div>
           <div class="avion-right"><img src="img/avion-right.png"/></div>
           <div class="silla2"><img src="img/silla.png" alt=""/></div>
@@ -739,7 +739,7 @@
                 <input type="checkbox" name="airweek" id="airweek" onclick="combinacion()"/>
               </div>
               <div class="combinacion-duplex"><span id="powerLotto" class="circle"></span></div>
-			  <input type="text" name="combinacion_send" value="" id="copy_combination" >
+			  <input type="text" name="combinacion_send" value="" id="copy_combination" hidden=hidden>
             </div>
             <input type="submit" value="Enviar combinación"/>
           </form>
@@ -778,7 +778,7 @@
                 <input type="checkbox" name="airweekM" id="airweekM" onclick="combinacion()"/>
               </div>
               <div class="combinacion-duplexM"><span id="powerLottoM" class="circle"></span></div>
-			  <input type="text" name="combinacion_send" value="" id="copy_combinationM" >
+			  <input type="text" name="combinacion_send" value="" id="copy_combinationM" hidden=hidden>
             </div>
             <input type="submit" value="Enviar combinación"/>
           </form>
