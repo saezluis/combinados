@@ -717,8 +717,23 @@
 	            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required />
 	            <input type="text" name="apellido" placeholder="Ingresa tu apellido" required />
 	            <input type="text" name="telefono" placeholder="Ingresa teléfono ej: 9 51165236" required />
-	            <select name="" id="">
-	            	<option value="">Comuna / ciudad</option>
+	            <?php
+					include_once 'config.php';
+		
+					$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
+					$acentos = $conexion->query("SET NAMES 'utf8'");
+				
+					$registrosComuna=mysqli_query($conexion,"select * from comuna ORDER BY COMUNA_NOMBRE ASC") or die("Problemas en el select:".mysqli_error($conexion));
+						
+				?>
+				<select name="comuna" id="">
+					<?php
+						echo "<option value=\"-1\">Comuna / ciudad</option>";
+						while($reg=mysqli_fetch_array($registrosComuna)){
+							$comuna_nombre = $reg['COMUNA_NOMBRE'];
+							echo "<option value=\"$comuna_nombre\">$comuna_nombre</option>";
+						}
+					?>
 	            </select>
             </div>
             <!--<div class="sep"></div>-->

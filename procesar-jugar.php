@@ -4,6 +4,7 @@
 	$nombre = $_REQUEST['nombre'];
 	$apellido = $_REQUEST['apellido'];
 	$telefono = $_REQUEST['telefono'];
+	$comuna = $_REQUEST['comuna'];
 	
 	$combinacion = $_REQUEST['combinacion_send'];
 	
@@ -29,11 +30,12 @@
 	}
 	
 	if($verificador=='F'){
-		mysqli_query($conexion,"INSERT INTO almacenero(nro_factura,nombre,apellido,telefono,multi,timestamp) values 
+		mysqli_query($conexion,"INSERT INTO almacenero(nro_factura,nombre,apellido,telefono,comuna,multi,timestamp) values 
 							('$nro_factura',
 							'$nombre',									
 							'$apellido',
 							'$telefono',
+							'$comuna',
 							'$combinacion',
 							'$timestamp'
 							)")or die("Problemas con el insert del contacto");
