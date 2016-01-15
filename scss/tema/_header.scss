@@ -73,32 +73,49 @@ header,.header{
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: 20px;
+
     background:url(../img/casa.jpg) repeat-x 1250px 80px/550%;
 
     @include desde (tablet){
         background: url(../img/casa.jpg) repeat-x 1760px 140px/330%;
+        margin-top: 20px;
     }
 
     @include desde (web){
         background: url(../img/casa.jpg) repeat-x 1760px 170px/110%;//antes 150
+        margin-top: 0;
     }
 
     @include desde (hd){
         background: url(../img/casa.jpg) repeat-x 2330px 170px/150%;
     }
 
+    @include desde (full){
+        background: url(../img/casa.jpg) repeat-x 2330px 170px/110%;
+    }
+
     a.logo{
         text-align: center;
         display: block;
         position: relative;
-        z-index: 1;
+        z-index: 5;
         @include desde (web){
             width: 33%;//38
-            margin:7px auto 0 auto;//35
+            //margin:7px auto 0 auto;//35
+            margin-left: 110px; //antes 180
         }
+
+        @include desde (sd){
+            width: 30%;
+        }
+
         @include desde (hd){
-            width: 50%;
+            width: 31%;
+            top:10px;
+            margin-left: 30px;
+        }
+        @include desde (full){
+            width: 35%;
         }
     }
     .logo-rekkit{
@@ -126,52 +143,87 @@ header,.header{
             width: 8%;
         }
     }
+
+    .logos-paquete-top-P{
+        display: none;
+        @include desde (web){
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 32%;
+        top: 70px;
+        }
+        @include desde (sd){
+            top:85px;
+            width: 401px;
+        }
+        @include desde (full){
+            width: 401px;
+        }
+    }
+
+    .logos-paquete-top{
+        display: none;
+        @include desde (web){
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 32%;
+        top: 100px;
+        }
+        @include desde (sd){
+            top:85px;
+            width: 401px;
+        }
+        @include desde (full){
+            width: 401px;
+        }
+    }
+
     .palmera{
         display: none;
         @include desde (web){
             display: block;
             position: absolute;
-            top: -20px;
-            left: 0;
+            top: 0;
+            left: -50px;//antes 0
             z-index: 4;
         }
     }
     .birds{
         display: none;
-        // @include desde (web){
-        //     display: none;
-        //     position: absolute;
-        //     left: 140px;
-        //     top: 113px;
-        //     width: 3%;
-        // }
-        // @include desde (sd){
-        //     top: 166px;
-        //     display: none;
-        // }
-        // @include desde (hd){
-        //     left: 320px;
-        //     display: none;
-        //     top: 222px;
-        // }
+        @include desde (web){
+            display: block;
+            position: absolute;
+            left: 140px;
+            top: 113px;
+            width: 3%;
+        }
+        @include desde (sd){
+            top: 166px;
+        }
+        @include desde (hd){
+            left: 320px;
+            top: 222px;
+        }
     }
 
     .birdsC{
         display: none;
-        // @include desde (web){
-        //     display: none;
-        //     position: absolute;
-        //     left: 140px;
-        //     top: 132px;
-        //     width: 3%;
-        // }
+        @include desde (web){
+            display: none;
+            position: absolute;
+            left: 140px;
+            top: 133px;
+            width: 3%;
+        }
         // @include desde (sd){
         //     top: 166px;
         // }
-        // @include desde (hd){
-        //     left: 320px;
-        //     top: 222px;
-        // }
+        @include desde (hd){
+            left: 320px;
+            top: 222px;
+        }
     }
 
 
@@ -184,10 +236,14 @@ header,.header{
             left: 20%;
         }
         @include desde (web){
-            left: 32%;
+            left: 4%;
+            top:25px;
         }
         @include desde (hd){
-            left: 35%;
+            left: 5%;
+        }
+        @include desde (full){
+            left: 11%;//antes 6
         }
     }
     .avion-left,
@@ -205,7 +261,7 @@ header,.header{
         display: none;
         @include desde-hasta (web,hd){
             left: 220px;
-            display: block;
+            display: none;
         }
         @include desde (hd){
             left: 550px;
@@ -214,11 +270,18 @@ header,.header{
     .avion-right{
         right: 10px;
         top: 100px;
-        @include desde-hasta (web,hd){
-            right: 218px;//278
+        @include desde (web){
+            right: 428px;//278
+        }
+        @include desde (sd){
+            right: 588px;
         }
         @include desde (hd){
-            right: 510px;
+            right: 740px;
+        }
+        @include desde (full){
+            left: 420px;
+            top: 50px;
         }
     }
     .silla{
@@ -227,12 +290,16 @@ header,.header{
             position: absolute;
             display: block;
             width: 13%;
-            left: 60px;
-            bottom: 160px;
+            left: 30px;//60
+            bottom: 225px;//antes 160
         }
         @include desde (hd){
-            left: 150px;
-            bottom: 110px;
+            left: 50px;
+            bottom: 158px;
+            width: 11%;
+        }
+        @include desde (full){
+            bottom: 135px;
         }        
     }
     .silla2{
@@ -241,32 +308,20 @@ header,.header{
             position: absolute;
             display: block;
             width: 13%;
-            left: 60px;
-            bottom: 295px;
+            left: 10px;
+            bottom: 155px;
         }
         @include desde (sd){
-            bottom: 263px;
+            bottom: 145px;
         }
         @include desde (hd){
-            left: 150px;
-            bottom: 110px;
-        }        
-    }
-    .silla3{
-        display: none;
-        @include desde (web){
-            position: absolute;
-            display: block;
-            width: 13%;
-            left: 60px;
-            bottom: 440px;
+            left: 80px;
+            bottom: 80px;
         }
-        @include desde (sd){
-            bottom: 400px;
-        }
-        @include desde (hd){
-            left: 150px;
-            bottom: 280px;
+        @include desde (full){
+            left: 40px;
+            bottom: 10px;
+            width: 11%;
         }        
     }
     .tango{
@@ -281,6 +336,10 @@ header,.header{
         @include desde (hd){
             bottom: 170px;
         }
+        @include desde (full){
+            right: 310px;
+            bottom:130px;
+        }
     }
     .tango2{
         display: none;
@@ -289,33 +348,21 @@ header,.header{
             display: block;
             width: 15%;
             right: 40px;
-            bottom: 350px;
+            bottom: 210px;
             z-index: 0;
         }
         @include desde (sd){
-            bottom: 317px;
+            bottom: 155px;
         }
         @include desde (hd){
-            bottom: 170px;
+            bottom: 80px;
+        }
+        @include desde (full){
+            bottom: 20px;
+            right: 240px;
         }
     }
-    .tango3{
-        display: none;
-        @include desde (web){
-            position: absolute;
-            display: block;
-            width: 15%;
-            right: 40px;
-            bottom: 498px;
-            z-index: 0;
-        }
-        @include desde (sd){
-            bottom: 433px;
-        }
-        @include desde (hd){
-            bottom: 330px;
-        }
-    }
+
 
     .sillaG{
         display: none;
@@ -355,6 +402,43 @@ header,.header{
     }
 
 
+    .silla-Co{
+        display: none;
+        @include desde (web){
+            position: absolute;
+            display: block;
+            width: 13%;
+            left: 60px;
+            bottom: 295px;
+        }
+        @include desde (sd){
+            bottom: 263px;
+        }
+        @include desde (hd){
+            left: 150px;
+            bottom: 110px;
+        }        
+    }
+
+
+    .tango-Co{
+        display: none;
+        @include desde (web){
+            position: absolute;
+            display: block;
+            width: 15%;
+            right: 40px;
+            bottom: 300px;
+            z-index: 0;
+        }
+        @include desde (sd){
+            bottom: 317px;
+        }
+        @include desde (hd){
+            bottom: 170px;
+        }
+    }
+
 
     h1{
         font-family: 'bukhari_scriptregular';
@@ -372,7 +456,42 @@ header,.header{
                 position: absolute;
                 left: 0;
                 top: 50px;
+                @include desde (full){
+                    top:58px;
+                }
             }
+
+        }
+        @include desde (full){
+            font-size: 2.7em;
+        }
+    }
+    h2{
+        font-family: 'bukhari_scriptregular';
+        font-size: 1.8em;
+        text-align: center;
+        position: relative;
+        color: $blanco;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, .4);
+        @include desde (tablet){
+            font-size: 2.1em;
+            text-align: left;
+        }
+        @include desde (web){
+
+            top: -40px;
+            span{
+                position: absolute;
+                left: 0;
+                top: 50px;
+                @include desde (full){
+                    top:58px;
+                }
+            }
+
+        }
+        @include desde (full){
+            font-size: 2.7em;
         }
     }
     .bodegon{
@@ -389,15 +508,41 @@ header,.header{
             img{
                 width: 110%;
             }
+            .pack-pree{
+                display: none;
+            }
         }
         @include desde (web){
             float: right;
+            position: relative;
+            z-index: 10;
             img{
-                width: 100%;
+                width: 89%;
+                float: right;
+            }
+            .pack-pree{
+                display: block;
+                position: absolute;
+                width: 70%;
+                top: 200px;
+                left: 90px;
             }
         }
         @include desde (hd){
             width: 64%;
+            .big{
+                width: 100%;
+            }
+        }
+        @include desde (full){
+            img{
+                width: 100%;
+            }
+            .pack-pree{
+                width: 65%;
+                top: 240px;
+                left: 90px;
+            }
         }
     }
     .claim,.claim-t{
@@ -414,8 +559,155 @@ header,.header{
             text-align: center;
             // padding: 1em;
             font-size: 0.9em;
+            @include desde (web){
+                text-align: left;
+                border: none;
+                border-radius: none;
+                box-shadow: none;
+                font-size: 0.95em;
+                line-height: 1.2;
+                padding: 0;
+            }
         } 
     }
+
+    //logos bajo btn
+    .logos-paquete{
+        display: none;
+            @include desde (web){
+                display: block;
+            width: 100%;
+            margin-top: 20px;
+            .medallas{
+                width: 25%;
+                float: left;
+                @include desde (sd){
+                    width: 23%;
+                }
+                @include desde (full){
+                    width: 26%;
+                }
+            }
+            @include desde (sd){
+                display: block;
+            }
+        }
+    }
+    .posicion-relative{
+        position: relative;
+    }
+    .logo-rekkit-left{
+        display: none;
+            @include desde (web){
+                display: block;
+                position: absolute;
+                bottom: 70px;
+                left: 0;
+                width: 17%;
+            }
+            @include desde (sd){
+                left: -33px;
+            }
+            @include desde (hd){
+                left: -85px;
+            }
+    }
+    .adelco-left{
+        display: none;
+            @include desde (web){
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            @include desde (sd){
+                left:-40px;
+            }
+            @include desde (hd){
+                left: -120px;
+            }
+    }
+
+    .logo-rekkit-left-G{
+        display: none;
+            @include desde (web){
+                display: block;
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                width: 17%;
+            }
+            @include desde (sd){
+                left: 0px;//antes -33
+            }
+            @include desde (hd){
+                left: 0px;
+            }
+            @include desde (full){
+                bottom: -70px;
+            }
+    }
+    .adelco-left-G{
+        display: none;
+            @include desde (web){
+                display: block;
+                position: absolute;
+                bottom: -60px;
+                left: 0;
+            }
+            @include desde (sd){
+                left:0px;
+            }
+            @include desde (hd){
+                left: 0px;
+            }
+            @include desde (full){
+                bottom: -140px;
+            }
+    }
+
+
+
+    .logo-rekkit-leftCont{
+        display: none;
+            @include desde (web){
+                display: block;
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                width: 17%;
+            }
+            @include desde (sd){
+                left: 0px;//antes -33
+            }
+            @include desde (hd){
+                left: 0px;
+            }
+            @include desde (full){
+                bottom: -70px;
+            }
+    }
+    .adelco-leftCont{
+        display: none;
+            @include desde (web){
+                display: block;
+                position: absolute;
+                bottom: -60px;
+                left: 0;
+            }
+            @include desde (sd){
+                left:0px;
+            }
+            @include desde (hd){
+                left: 0px;
+            }
+            @include desde (full){
+                bottom: -140px;
+            }
+    }
+
+
+
     a.jugar,a.jugar-t{
         box-shadow: 0 0 1px rgba(43, 187, 252, 0.76), 0 0 5px #2ecdfd, inset 0 0 rgba(196, 240, 254, 0.75);
         border: solid 1px rgba(47, 189, 226, 0.85);
@@ -434,6 +726,7 @@ header,.header{
         @include desde (tablet){
             display: none;
         }
+
     }
     .claim-t{
         display: none;
@@ -444,10 +737,15 @@ header,.header{
             @include desde (tablet){
                 font-size: 1em;
             }
+
         }
         @include desde (web){
-            margin-top: 5em;
+            margin-top: 4em;
             width: 62%;
+
+        }
+        @include desde (full){
+            margin-top: 5em;
         }
     }
     a.jugar-t{
@@ -455,12 +753,17 @@ header,.header{
         @include desde (tablet){
             display: block;
         }
-        margin-top:1.5em;
+        //margin-top:1.5em;
         @include desde (web){
             width: 58%;
+            margin-top: 15px;
         }
         @include desde (hd){
-            margin-top: 2.5em;
+            margin-top: 1.5em;
+        }
+        @include desde (full){
+            background: $rosado_oscuro;
+            color: $blanco;
         }
     }
 
@@ -480,12 +783,31 @@ header,.header{
             z-index: 0;
         }
         @include desde (web){
-            margin-top: 4em;
-            width: 80%;
+            margin-top: 1em;
+            .form-sideLL{
+                width: 39%;
+                float: left;
+                margin-right: 15px;
+            }
+            .form-sideRR{
+                width: 58%;
+                float: left;
+            }
+            p{
+                color:$blanco;
+                text-transform: uppercase;
+                font-weight: 1em;
+            }
         }
         @include desde (sd){
-            width: 67%;
+            width: 84%;
         }
+        @include desde (hd){
+            width: 94%;
+        }
+
+//los botoncitos
+
         .elige-combi-caja{
             width: 100%;
             margin-bottom: 1em;
@@ -553,10 +875,16 @@ header,.header{
                 left: 38px;
             }
         }
-        .air{
-            margin-top: 1em;
-        }
+
+
+
+
+
+
     }
+
+
+
     form#M, form#N{
         //width: 100%;
         padding: 10px 15px;
@@ -569,7 +897,7 @@ header,.header{
         -moz-box-shadow: 0 0 1px rgba(43,187,252,.76), 0 0 5px #2ecdfd, inset 0 0 5px 1px rgba(196,240,254,.75);
         box-shadow: 0 0 1px rgba(43,187,252,.76), 0 0 5px #2ecdfd, inset 0 0 5px 1px rgba(196,240,254,.75);
         border: solid 2px rgba(47,189,226,.85);
-        h2{
+        h3{
             color: $blanco;
             text-align: left;
             text-transform: uppercase;
@@ -634,8 +962,13 @@ header,.header{
             background: transparent;
             cursor: pointer;
         }
-        
-        .elige-combi-cajaM{
+    }//form
+
+
+    //formN
+
+    form#M{
+.elige-combi-cajaM{
             width: 100%;
             margin-bottom: 1em;
             float: left;
@@ -653,30 +986,41 @@ header,.header{
                     border: 2px solid #fff;
                     padding: 0.2em;
                 }
-                span.texto-implicitoL {
-                    font-size: 0.9em;
-                    border:none;
-                    display: block;
-                    text-align: center;
-                    padding-bottom: 1.3em;
-                    text-transform: uppercase;
-                }
-                span.texto-implicitoR {
-                    font-size: 0.9em;
-                    border:none;
-                    display: block;
-                    text-align: center;
-                    padding-top: 1.3em;
-                    text-transform: uppercase;
-                }
+                // div.n-texto-implicitoLM {
+                //     font-size: 0.8em;
+                //     border:none;
+                //     display: block;
+                //     text-align: left;
+                //     //padding-bottom: 1.3em;
+                //     text-transform: uppercase;
+                //     position: absolute;
+                //     bottom: 20px;
+                //     border: 0 solid;
+                // }
+                // div.n-texto-implicitoRM {
+                //     font-size: 0.8em;
+                //     border:none;
+                //     display: block;
+                //     text-align: left;
+                //     //padding-top: 1.3em;
+                //     text-transform: uppercase;
+                //     position: absolute;
+                //     bottom: 20px;
+                //     right: 25px;
+                //     border: none !important;
+                // }
             }
         }
-
         .logoscombinarM{
             //width: 69px;
             float: left;
             position: relative;
-            width: 58px;
+            @include desde (tablet){
+                width: 63px;
+            }
+            @include desde (web){
+                width: 69px;
+            }
             label{
                 width: 50px;
                 height: auto;
@@ -692,11 +1036,13 @@ header,.header{
                 top: 60px;
                 left: 38px;
             }
-
         }
 
 
-    }//form
+
+    }//fin
+
+
 
     
     //combinaciones
@@ -896,6 +1242,28 @@ header,.header{
 .header{
     background-image: none;
     padding-top: 50px;
+    position: relative;
+    .logo-rekkit-left-P{
+
+        display: none;
+       
+        @include desde (web){
+            display: block;
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+        }
+    }
+    .adelco-left-P{
+        display: none;
+        @include desde (web){
+            display: block;
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+        }
+
+    }
     section.viajesM{
         display: block;
         position: relative;

@@ -40,6 +40,9 @@ nav {
 		// top:138px;
 		width: 38% !important;
 	}
+	@include desde (full){
+		width: 28% !important; 
+	}
 }
 
 .menu_bar {

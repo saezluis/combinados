@@ -35,16 +35,15 @@
       <div class="ed-container">
         <div class="ed-item base-100 web-100">
           <div class="logo-rekkit"><img src="img/logo-rekkit.png"/></div>
-          <div class="logo-rekkitW"><img src="img/logo-rekkit.png"/></div>
+          <div class="logos-paquete-top"><img src="img/otros-logos.png" alt=""/></div>
           <div class="torres"><img src="img/torres.png"/></div>
-          <div class="birdsC"><img src="img/birds.png" alt=""/></div>
-          <div class="palmera"><img src="img/palmera.png"/></div><a href="index.php" class="logo"> <img src="img/logo.png"/></a>
+          <div class="palmera"><img src="img/palmera.png"/></div><a href="index.html" class="logo"> <img src="img/logo.png"/></a>
           <div class="avion-left"><img src="img/avion-left.png"/></div>
           <div class="avion-right"><img src="img/avion-right.png"/></div>
           <div class="silla"><img src="img/silla.png" alt=""/></div>
           <div class="tango"><img src="img/tango.png" alt=""/></div>
         </div>
-        <div class="ed-item base-100 tablet-50 tablet-order-2">
+        <div class="ed-item base-100 tablet-50 tablet-order-2 web-55 sd-55 hd-55 full-50">
           <h1>Ganas tú, gano yo... <span>Ganamos los 2</span></h1>
           <div class="claim-t">
             <p>
@@ -52,18 +51,31 @@
               espectaculares premios diarios y 3 increíbles
               viajes para 2 personas.
             </p>
-          </div><a href="jugar.php" class="jugar-t">PARTICIPAR</a>
+          </div><a href="jugar.php" class="jugar-t">Participar</a>
+          <div class="logos-paquete">
+            <div class="medallas"><img src="img/medalla-1.png" alt=""/></div>
+            <div class="medallas"><img src="img/medalla-2.png" alt=""/></div>
+            <div class="medallas"><img src="img/medalla-3.png" alt=""/></div>
+            <!-- <div class="medallas"><img src="img/medalla-1.png" alt=""/></div> -->
+          </div>
         </div>
-        <div class="ed-item base-100 tablet-50 tablet-order-1">
+        <div class="ed-item base-100 tablet-50 tablet-order-1 web-45 sd-45 hd-45 full-50 posicion-relative">
           <div class="bodegon"><img src="img/bodegon.png"/></div>
-          <div class="personas"><img src="img/personas.png"/></div>
+          <div class="personas">
+            <img src="img/personas.png"/>
+            <div class="pack-pree">
+              <img src="img/paquete-premios.png" alt="">
+            </div>
+            </div>
           <div class="claim">
             <p>
               Ingresa el número de factura y participa por
               espectaculares premios diarios y 3 increíbles
               viajes para 2 personas.
             </p>
-          </div><a href="jugar.php" class="jugar">PARTICIPAR</a>
+          </div><a href="jugar.php" class="jugar">Participar</a>
+          <div class="logo-rekkit-left"><img src="img/logo-rekkit.png"/></div>
+          <div class="adelco-left"><img src="img/logo-adelco.png"/></div>
         </div>
       </div>
     </header>

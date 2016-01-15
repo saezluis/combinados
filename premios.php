@@ -33,7 +33,8 @@
       <div class="ed-container total">
         <div class="ed-item base-100 web-100 hd-100">
           <div class="logo-rekkit"><img src="img/logo-rekkit.png"/></div>
-          <div class="logo-rekkitW"><img src="img/logo-rekkit.png"/></div>
+          <div class="logos-paquete-top-P"><img src="img/otros-logos.png" alt=""/></div>
+          <!-- <div class="logo-rekkitW"><img src="img/logo-rekkit.png"/></div> -->
           <div class="torres"><img src="img/torres.png"/></div>
           <div class="birds"><img src="img/birds.png" alt=""/></div>
           <div class="palmera"><img src="img/palmera.png"/></div><a href="index.php" class="logo"> <img src="img/logo.png"/></a>
@@ -78,6 +79,8 @@
           </div>
         </section>
       </div>
+          <div class="logo-rekkit-left-P"><img src="img/logo-rekkit.png"/></div>
+          <div class="adelco-left-P"><img src="img/logo-adelco.png"/></div>
     </div>
     <footer>
       <div class="ed-container total">

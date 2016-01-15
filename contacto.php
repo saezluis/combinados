@@ -33,24 +33,26 @@
       <div class="ed-container">
         <div class="ed-item base-100 web-100">
           <div class="logo-rekkit"><img src="img/logo-rekkit.png"/></div>
-          <div class="logo-rekkitW"><img src="img/logo-rekkit.png"/></div>
+          <div class="logos-paquete-top"><img src="img/otros-logos.png" alt=""/></div>
+<!--           <div class="logo-rekkitW"><img src="img/logo-rekkit.png"/></div> -->
           <div class="torres"><img src="img/torres.png"/></div>
           <div class="birdsC"><img src="img/birds.png" alt=""/></div>
           <div class="palmera"><img src="img/palmera.png"/></div><a href="index.php" class="logo"> <img src="img/logo.png"/></a>
           <div class="avion-left"><img src="img/avion-left.png"/></div>
           <div class="avion-right"><img src="img/avion-right.png"/></div>
-          <div class="silla2"><img src="img/silla.png" alt=""/></div>
-          <div class="tango2"><img src="img/tango.png" alt=""/></div>
+          <div class="silla-Co"><img src="img/silla.png" alt=""/></div>
+          <div class="tango-Co"><img src="img/tango.png" alt=""/></div>
         </div>
         <div class="ed-item base-100 tablet-50 tablet-order-2">
-          <h1>Ganas tú, gano yo... <span>Ganamos los 2</span></h1>
+          <h2 >Ganas tú, gano yo... <span>Ganamos los 2</span></h2>
           <form id="N" method="POST" action="procesar-contacto.php">
-            <h2>Es bueno estar conecta2</h2>
+            <h3>Es bueno estar conecta2</h3>
             <input type="text" name="nombre_apellido" placeholder="Ingresa tu nombre y apellido" required/>
             <input type="text" name="email" placeholder="Ingresa tu mail" required/>
             <textarea name="comentario" placeholder="escríbenos" required></textarea>
             <input type="submit" value="Enviar"/>
           </form>
+
         </div>
         <div class="ed-item base-100 tablet-50 tablet-order-1">
           <div class="personas"><img src="img/personas.png"/></div>
@@ -62,6 +64,8 @@
             <textarea name="comentario" placeholder="escríbenos" required></textarea>
             <input type="submit" value="Enviar"/>
           </form>
+          <div class="logo-rekkit-leftCont"><img src="img/logo-rekkit.png"/></div>
+          <div class="adelco-leftCont"><img src="img/logo-adelco.png"/></div>
         </div>
       </div>
     </header>

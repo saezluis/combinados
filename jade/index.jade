@@ -37,12 +37,13 @@ html(lang="es")
 				.ed-item.base-100.web-100
 					.logo-rekkit
 						img(src="img/logo-rekkit.png")
-					.logo-rekkitW
-						img(src="img/logo-rekkit.png")
+
+					.logos-paquete-top
+						img(src="img/otros-logos.png", alt="")
 					.torres
 						img(src="img/torres.png")
-					.birds
-						img(src="img/birds.png", alt="")
+					//- .birdsC
+					//- 	img(src="img/birds.png", alt="")
 					.palmera
 						img(src="img/palmera.png")
 					a.logo(href="index.html") 
@@ -56,14 +57,25 @@ html(lang="es")
 						img(src="img/silla.png", alt="")
 					.tango
 						img(src="img/tango.png", alt="")
-				.ed-item.base-100.tablet-50.tablet-order-2
+				.ed-item.base-100.tablet-50.tablet-order-2.web-55.sd-55.hd-55.full-50
 					h1 Ganas tú, gano yo... <span>Ganamos los 2</span>
 					.claim-t
 						p Ingresa el número de factura y participa por
 							|espectaculares premios diarios y 3 increíbles
 							|viajes para 2 personas.
 					a.jugar-t(href="jugar.html") Jugar
-				.ed-item.base-100.tablet-50.tablet-order-1
+					.logos-paquete
+						.medallas
+							img(src="img/medalla-1.png", alt="")
+						.medallas
+							img(src="img/medalla-1.png", alt="")
+						.medallas
+							img(src="img/medalla-1.png", alt="")
+						.medallas
+							img(src="img/medalla-1.png", alt="")
+
+
+				.ed-item.base-100.tablet-50.tablet-order-1.web-45.sd-45.hd-45.full-50.posicion-relative
 					.bodegon
 						img(src="img/bodegon.png")
 					.personas
@@ -73,14 +85,19 @@ html(lang="es")
 							|espectaculares premios diarios y 3 increíbles
 							|viajes para 2 personas.
 					a.jugar(href="jugar.html") Jugar
-		footer
-			.ed-container.total
-				.ed-item.base-50.no-padding.web-50.no-padding
-					.adelco
+					.logo-rekkit-left
+						img(src="img/logo-rekkit.png")
+					.adelco-left
 						img(src="img/logo-adelco.png")
-				.ed-item.base-50.no-padding.web-50.no-padding
-					.otros-logos
-						img(src="img/otros-logos.png")
+
+		//- footer
+		//- 	.ed-container.total
+		//- 		.ed-item.base-50.no-padding.web-50.no-padding
+		//- 			.adelco
+		//- 				img(src="img/logo-adelco.png")
+		//- 		.ed-item.base-50.no-padding.web-50.no-padding
+		//- 			.otros-logos
+		//- 				img(src="img/otros-logos.png")
 		script.
 			$(window).load(function() {
 			$('#preloader').fadeOut('slow');
