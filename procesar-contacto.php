@@ -75,8 +75,8 @@
           -->
 		  <form id="N" method="POST" action="index.php">
 			
-			<h2>Hemos recibido tus comentarios</h2>
-			<h2>Atenderemos a la brevedad tu solicitud</h2>
+			<p>Hemos recibido tus comentarios</p>
+			<p>Atenderemos a la brevedad tu solicitud</p>
 			<!--
             <input type="text" name="nombre_apellido" placeholder="Ingresa tu nombre y apellido" required/>
             <input type="text" name="email" placeholder="Ingresa tu mail" required/>
@@ -91,8 +91,8 @@
 		  
           <form id="M" method="POST" action="index.php">
            
-			<h2>Hemos recibido tus comentarios</h2>
-			<h2>Atenderemos a la brevedad tu solicitud</h2>
+			<p>Hemos recibido tus comentarios</p>
+			<p>Atenderemos a la brevedad tu solicitud</p>
 			<!--
             <input type="text" name="nombre_apellido" placeholder="Ingresa tu nombre y apellido" required/>
             <input type="text" name="email" placeholder="Ingresa tu mail" required/>

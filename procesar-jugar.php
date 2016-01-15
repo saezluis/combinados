@@ -160,19 +160,19 @@
         <div class="ed-item base-100 tablet-50 tablet-order-2">
           <h1>Ganas tú, gano yo... <span>Ganamos los 2</span></h1>
 		  
-          <form id="N" method="POST" action="jugar.php">
+          <form id="N" method="POST" action="jugar.php" style="margin-top:80px;">
             <?php
 				if($verificador=='T'){
-					echo "<h2>Numero de factura ya existe</h2>";
+					echo "<p style=\"color:#fff; font-size:1.2em; text-transform:uppercase; font-weight:bold; text-align:center;\">Numero de factura ya existe</p>";
 					//echo "<br>";
 					//echo "<br>";
 				echo "<input type=\"submit\" value=\"Volver\"/>";
 				}else{
-					echo "<h2>Datos registrados con éxito</h2>";
+					echo "<p>Datos registrados con éxito</p>";
 					echo "<br>";
-					echo "<h2>Ahora ya estás participando</h2>";
+					echo "<p>Ahora ya estás participando</p>";
 					echo "<br>";
-					echo "<h2>Mucha suerte!</h2>";
+					echo "<p>Mucha suerte!</p>";
 					echo "<input type=\"submit\" value=\"Volver\" formaction=\"index.php\" />";
 				}
 				
@@ -200,16 +200,16 @@
           <form id="M" method="POST" action="procesar-jugar.php">
 			<?php
 				if($verificador=='T'){
-					echo "<h2>Numero de factura ya existe</h2>";
+					echo "<p style=\"color:#fff; font-size:1.1em; text-transform:uppercase; font-weight:bold; text-align:center;\">Numero de factura ya existe</p>";
 					//echo "<br>";
 					//echo "<br>";
 				echo "<input type=\"submit\" value=\"Volver\"/>";
 				}else{
-					echo "<h2>Datos registrados con éxito</h2>";
+					echo "<p>Datos registrados con éxito</p>";
 					echo "<br>";
-					echo "<h2>Ahora ya estás participando</h2>";
+					echo "<p>Ahora ya estás participando</p>";
 					echo "<br>";
-					echo "<h2>Mucha suerte!</h2>";
+					echo "<p>Mucha suerte!</p>";
 					echo "<input type=\"submit\" value=\"Volver\" formaction=\"index.php\" />";
 				}
 				
