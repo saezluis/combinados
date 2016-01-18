@@ -48,15 +48,19 @@
           <label for="button-2" class="button-label-2"></label>
           <input id="button-3" type="radio" name="radio-set" class="sp-selector-3"/>
           <label for="button-3" class="button-label-3"></label>
+          <input id="button-4" type="radio" name="radio-set" class="sp-selector-4"/>
+          <label for="button-4" class="button-label-4"></label>
           <label for="button-1" class="sp-arrow sp-a1"></label>
           <label for="button-2" class="sp-arrow sp-a2"></label>
           <label for="button-3" class="sp-arrow sp-a3"></label>
+          <label for="button-4" class="sp-arrow sp-a4"></label>
           <div class="sp-content">
             <div class="sp-parallax-bg"></div>
             <ul class="sp-slider clearfix">
               <li><img src="img/premio-caribe.png" alt="Caribe"/></li>
               <li><img src="img/premio-bs.png" alt="Buenos Aires"/></li>
               <li><img src="img/premio-chile.png" alt="viaje por chile"/></li>
+              <li><img src="img/premio-semanales.png" alt="premios semanales"/></li>
             </ul>
           </div>
         </div>
