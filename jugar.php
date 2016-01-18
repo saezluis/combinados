@@ -726,9 +726,9 @@
 					$registrosComuna=mysqli_query($conexion,"select * from comuna ORDER BY COMUNA_NOMBRE ASC") or die("Problemas en el select:".mysqli_error($conexion));
 						
 				?>
-				<select name="comuna" id="">
+				<select name="comuna" id="" required>
 					<?php
-						echo "<option value=\"-1\">Comuna / ciudad</option>";
+						echo "<option value=\"\">Comuna / ciudad</option>";
 						while($reg=mysqli_fetch_array($registrosComuna)){
 							$comuna_nombre = $reg['COMUNA_NOMBRE'];
 							echo "<option value=\"$comuna_nombre\">$comuna_nombre</option>";
@@ -784,6 +784,24 @@
             <input type="text" name="nombre" placeholder="Ingresa tu nombre"/>
             <input type="text" name="apellido" placeholder="Ingresa tu apellido"/>
             <input type="text" name="telefono" placeholder="Ingresa tu número de teléfono"/>
+			<?php
+					include_once 'config.php';
+		
+					$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
+					$acentos = $conexion->query("SET NAMES 'utf8'");
+				
+					$registrosComuna=mysqli_query($conexion,"select * from comuna ORDER BY COMUNA_NOMBRE ASC") or die("Problemas en el select:".mysqli_error($conexion));
+						
+				?>
+				<select name="comuna" id="" required>
+					<?php
+						echo "<option value=\"-1\">Comuna / ciudad</option>";
+						while($reg=mysqli_fetch_array($registrosComuna)){
+							$comuna_nombre = $reg['COMUNA_NOMBRE'];
+							echo "<option value=\"$comuna_nombre\">$comuna_nombre</option>";
+						}
+					?>
+	            </select>
             <div class="sep"></div>
             <label>Selecciona tu combinación</label>
             <div class="elige-combi-cajaM">

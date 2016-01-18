@@ -29,7 +29,7 @@
 		}
 	}
 	
-	if($verificador=='F'){
+	if($verificador=='F' && $combinacion!=0){
 		mysqli_query($conexion,"INSERT INTO almacenero(nro_factura,nombre,apellido,telefono,comuna,multi,timestamp) values 
 							('$nro_factura',
 							'$nombre',									
@@ -39,6 +39,9 @@
 							'$combinacion',
 							'$timestamp'
 							)")or die("Problemas con el insert del contacto");
+							$verifi='Y';
+	}else{
+		$verifi='X';
 	}
 	
 	$last_id = mysqli_insert_id($conexion);
@@ -133,8 +136,12 @@
       <div id="loader"></div>
     </div>
 	-->
-    <div class="menu_bar"><a href="#" class="bt-menu"><span><img src="img/menu.png"/></span>Menu</a></div>
-    <nav>
+   	<div class="menu_bar"><a href="#" class="bt-menu"><span><img src="img/menu.png"/></span>Menu</a></div>
+    <?php
+		include "menu.php";
+	?>
+	<!--
+	<nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="combinaciones.html">Combinaciones</a></li>
@@ -144,6 +151,7 @@
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
+	-->
     <header>
       <div class="ed-container">
         <div class="ed-item base-100 web-100 hd-100">
@@ -163,11 +171,11 @@
           <form id="N" method="POST" action="jugar.php" style="margin-top:80px;">
             <?php
 				if($verificador=='T'){
-					echo "<p style=\"color:#fff; font-size:1.2em; text-transform:uppercase; font-weight:bold; text-align:center;\">Numero de factura ya existe</p>";
-					//echo "<br>";
-					//echo "<br>";
+				echo "<p style=\"color:#fff; font-size:1.2em; text-transform:uppercase; font-weight:bold; text-align:center;\">Numero de factura ya existe</p>";
+				//echo "<br>";
+				//echo "<br>";
 				echo "<input type=\"submit\" value=\"Volver\"/>";
-				}else{
+				}elseif($verifi=='Y'){
 					echo "<p>Datos registrados con éxito</p>";
 					echo "<br>";
 					echo "<p>Ahora ya estás participando</p>";
@@ -176,6 +184,10 @@
 					echo "<input type=\"submit\" value=\"Volver\" formaction=\"index.php\" />";
 				}
 				
+				if($verifi=='X' && $verificador=='F'){
+					echo "<p style=\"color:#fff; font-size:1.2em; text-transform:uppercase; font-weight:bold; text-align:center;\">Multiplicador no válido</p>";
+					echo "<input type=\"submit\" value=\"Volver\" formaction=\"index.php\" />";
+				}
 			?>
 			
 			<!--
