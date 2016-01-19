@@ -720,12 +720,12 @@
           
 		  
           <form id="N" method="POST" action="procesar-jugar.php">
-            <p>Para participar, ingresar tus datos y número de factura </p>
+            <p>Para participar, ingresa tus datos y número de factura </p>
             <div class="form-sideLL">
-	            <input type="text" name="nro_factura" placeholder="Ingresa el número de factura" required />
-	            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required />
-	            <input type="text" name="apellido" placeholder="Ingresa tu apellido" required />
-	            <input type="text" name="telefono" placeholder="Ingresa teléfono ej: 9 51165236" required />
+	            <input type="text" name="nro_factura" placeholder="Número de factura" required />
+	            <input type="text" name="nombre" placeholder="Nombre" required />
+	            <input type="text" name="apellido" placeholder="Apellido" required />
+	            <input type="text" name="telefono" placeholder="Teléfono (ej: 9 51165286)" required />
 	            <?php
 					include_once 'config.php';
 		
@@ -789,10 +789,10 @@
           <div class="adelco-left-G"><img src="img/logo-adelco.png"/></div>
           <form id="M" method="POST" action="procesar-jugar.php">
             <h2>Para participar, debes ingresar el número de factura y tus datos</h2>
-            <input type="text" name="nro_factura" placeholder="Ingresa el número de factura"/>
-            <input type="text" name="nombre" placeholder="Ingresa tu nombre"/>
-            <input type="text" name="apellido" placeholder="Ingresa tu apellido"/>
-            <input type="text" name="telefono" placeholder="Ingresa tu número de teléfono"/>
+            <input type="text" name="nro_factura" placeholder="Número de factura" required/>
+            <input type="text" name="nombre" placeholder="Nombre" required/>
+            <input type="text" name="apellido" placeholder="Apellido" required/>
+            <input type="text" name="telefono" placeholder="Teléfono (ej: 9 51165286)" required/>
 			<?php
 					include_once 'config.php';
 		
@@ -804,7 +804,7 @@
 				?>
 				<select name="comuna" id="" required>
 					<?php
-						echo "<option value=\"-1\">Comuna / ciudad</option>";
+						echo "<option value=\"\">Comuna / ciudad</option>";
 						while($reg=mysqli_fetch_array($registrosComuna)){
 							$comuna_nombre = $reg['COMUNA_NOMBRE'];
 							echo "<option value=\"$comuna_nombre\">$comuna_nombre</option>";

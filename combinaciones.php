@@ -63,12 +63,12 @@
               </li>
               <li>
                 Por la compra de una combinación
-                de 2 productos aumentas x3 tus
+                de 3 productos aumentas x3 tus
                 posibilidades de ganar.
               </li>
               <li>
                 Por la compra de una combinación
-                de 2 productos aumentas x4 tus
+                de 4 productos o más aumentas x4 tus
                 posibilidades de ganar.
               </li>
             </ul>
@@ -87,12 +87,12 @@
               </li>
               <li>
                 Por la compra de una combinación
-                de 2 productos aumentas x3 tus
+                de 3 productos aumentas x3 tus
                 posibilidades de ganar.
               </li>
               <li>
                 Por la compra de una combinación
-                de 2 productos aumentas x4 tus
+                de 4 productos o más aumentas x4 tus
                 posibilidades de ganar.
               </li>
             </ul>

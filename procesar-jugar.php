@@ -180,7 +180,7 @@
 					echo "<br>";
 					echo "<p>Ahora ya estás participando</p>";
 					echo "<br>";
-					echo "<p>Mucha suerte!</p>";
+					echo "<p>¡ Mucha suerte !</p>";
 					echo "<input type=\"submit\" value=\"Volver\" formaction=\"index.php\" />";
 				}
 				
@@ -221,7 +221,7 @@
 					echo "<br>";
 					echo "<p>Ahora ya estás participando</p>";
 					echo "<br>";
-					echo "<p>Mucha suerte!</p>";
+					echo "<p>¡ Mucha suerte !</p>";
 					echo "<input type=\"submit\" value=\"Volver\" formaction=\"index.php\" />";
 				}
 				
