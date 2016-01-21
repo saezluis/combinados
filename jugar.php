@@ -9,6 +9,15 @@
     <script src="js/scripts.js"></script>
     <title>Combina2</title>
 	
+	<script src="js/jquery.js"></script>
+    <script src="js-webshim/minified/polyfiller.js"></script> 
+
+    <script> 
+        webshim.activeLang('en');
+        webshims.polyfill('forms');
+        webshims.cfg.no$Switch = true;
+    </script>
+	
 	<script type="text/javascript">
 		function combinacion(){
 			
@@ -673,7 +682,7 @@
 	</script>
 	
 	<script type="text/javascript">
-	
+	/*
 		var form = document.getElementById('M'); // form has to have ID: <form id="formID">
 		form.noValidate = true;
 		form.addEventListener('submit', function(event) { // listen for form submitting
@@ -681,7 +690,7 @@
             event.preventDefault(); // dismiss the default functionality
             alert('Este campo es requerido'); // error message
         }
-		}, false);
+		}, false);*/
 	
 	/*
 	function validarCampos(){
@@ -835,10 +844,10 @@
           <div class="adelco-left-G"><img src="img/logo-adelco.png"/></div>
           <form id="M" method="POST" action="procesar-jugar.php" >
             <h2>Para participar, debes ingresar el número de factura y tus datos</h2>
-            <input type="text" name="nro_factura" placeholder="Número de factura" id="nro_fact" />
-            <input type="text" name="nombre" placeholder="Nombre" id="nombre_validate" />
-            <input type="text" name="apellido" placeholder="Apellido" id="apellido_validate" />
-            <input type="text" name="telefono" placeholder="Teléfono (ej: 9 51165286)" id="telefono_validate" />
+            <input type="text" name="nro_factura" placeholder="Número de factura" id="nro_fact" required />
+            <input type="text" name="nombre" placeholder="Nombre" id="nombre_validate" required />
+            <input type="text" name="apellido" placeholder="Apellido" id="apellido_validate" required />
+            <input type="text" name="telefono" placeholder="Teléfono (ej: 9 51165286)" id="telefono_validate" required />
 			<?php
 					include_once 'config.php';
 		
