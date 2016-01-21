@@ -674,6 +674,15 @@
 	
 	<script type="text/javascript">
 	
+		var form = document.getElementById('form_mobile'); // form has to have ID: <form id="formID">
+		form.noValidate = true;
+		form.addEventListener('submit', function(event) { // listen for form submitting
+        if (!event.target.checkValidity()) {
+            event.preventDefault(); // dismiss the default functionality
+            alert('Este campo es requerido'); // error message
+        }
+		}, false);
+	
 	/*
 	function validarCampos(){
 
@@ -824,12 +833,12 @@
 		  <!--aqui los logos-->
           <div class="logo-rekkit-left-G"><img src="img/logo-rekkit.png"/></div>
           <div class="adelco-left-G"><img src="img/logo-adelco.png"/></div>
-          <form id="M" method="POST" action="procesar-jugar.php">
+          <form id="M" method="POST" action="procesar-jugar.php" id="form_mobile">
             <h2>Para participar, debes ingresar el número de factura y tus datos</h2>
-            <input type="text" name="nro_factura" placeholder="Número de factura" id="nro_fact" required />
-            <input type="text" name="nombre" placeholder="Nombre" id="nombre_validate" required />
-            <input type="text" name="apellido" placeholder="Apellido" id="apellido_validate" required />
-            <input type="text" name="telefono" placeholder="Teléfono (ej: 9 51165286)" id="telefono_validate" required />
+            <input type="text" name="nro_factura" placeholder="Número de factura" id="nro_fact" />
+            <input type="text" name="nombre" placeholder="Nombre" id="nombre_validate" />
+            <input type="text" name="apellido" placeholder="Apellido" id="apellido_validate" />
+            <input type="text" name="telefono" placeholder="Teléfono (ej: 9 51165286)" id="telefono_validate" />
 			<?php
 					include_once 'config.php';
 		
