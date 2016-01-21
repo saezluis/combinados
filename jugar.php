@@ -9,15 +9,7 @@
     <script src="js/scripts.js"></script>
     <title>Combina2</title>
 	
-	<script src="js/jquery.js"></script>
-    <script src="js-webshim/minified/polyfiller.js"></script> 
-
-    <script> 
-        webshim.activeLang('en');
-        webshims.polyfill('forms');
-        webshims.cfg.no$Switch = true;
-    </script>
-	
+		
 	<script type="text/javascript">
 		function combinacion(){
 			
@@ -682,6 +674,19 @@
 	</script>
 	
 	<script type="text/javascript">
+	
+	var forms = document.getElementsByTagName('form');
+		for (var i = 0; i < forms.length; i++) {
+		forms[i].noValidate = true;
+		forms[i].addEventListener('submit', function(event) {
+        //Prevent submission if checkValidity on the form returns false.
+			if (!event.target.checkValidity()) {
+				event.preventDefault();
+				//Implement you own means of displaying error messages to the user here.
+			}
+			}, false);
+		}
+		
 	/*
 		var form = document.getElementById('M'); // form has to have ID: <form id="formID">
 		form.noValidate = true;
