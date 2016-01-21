@@ -673,7 +673,8 @@
 	</script>
 	
 	<script type="text/javascript">
-
+	
+	/*
 	function validarCampos(){
 
 		if(document.getElementById("nro_fact").value == "" ){
@@ -702,7 +703,7 @@
 
 		return( true );
 
-	}
+	}*/
 	
 	</script>
 	
@@ -825,10 +826,10 @@
           <div class="adelco-left-G"><img src="img/logo-adelco.png"/></div>
           <form id="M" method="POST" action="procesar-jugar.php">
             <h2>Para participar, debes ingresar el número de factura y tus datos</h2>
-            <input type="text" name="nro_factura" placeholder="Número de factura" id="nro_fact" />
-            <input type="text" name="nombre" placeholder="Nombre" id="nombre_validate" />
-            <input type="text" name="apellido" placeholder="Apellido" id="apellido_validate" />
-            <input type="text" name="telefono" placeholder="Teléfono (ej: 9 51165286)" id="telefono_validate" />
+            <input type="text" name="nro_factura" placeholder="Número de factura" id="nro_fact" required />
+            <input type="text" name="nombre" placeholder="Nombre" id="nombre_validate" required />
+            <input type="text" name="apellido" placeholder="Apellido" id="apellido_validate" required />
+            <input type="text" name="telefono" placeholder="Teléfono (ej: 9 51165286)" id="telefono_validate" required />
 			<?php
 					include_once 'config.php';
 		
@@ -877,7 +878,7 @@
               </div>
 			  <input type="text" name="combinacion_send" value="" id="copy_combinationM" hidden=hidden>
             </div>
-            <input type="submit" onclick="return(validarCampos())" value="Enviar combinación"/>
+            <input type="submit" value="Enviar combinación"/>
           </form>
 		  
         </div>
