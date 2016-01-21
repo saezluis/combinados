@@ -9,6 +9,63 @@
     <script src="js/scripts.js"></script>
     <title>Combina2</title>
 	
+	<script type="text/javascript">
+	
+	var forms = document.getElementsByTagName('form');
+		for (var i = 0; i < forms.length; i++) {
+		forms[i].noValidate = true;
+		forms[i].addEventListener('submit', function(event) {
+        //Prevent submission if checkValidity on the form returns false.
+			if (!event.target.checkValidity()) {
+				event.preventDefault();
+				//Implement you own means of displaying error messages to the user here.
+			}
+			}, false);
+		}
+		
+	/*
+		var form = document.getElementById('M'); // form has to have ID: <form id="formID">
+		form.noValidate = true;
+		form.addEventListener('submit', function(event) { // listen for form submitting
+        if (!event.target.checkValidity()) {
+            event.preventDefault(); // dismiss the default functionality
+            alert('Este campo es requerido'); // error message
+        }
+		}, false);*/
+	
+	/*
+	function validarCampos(){
+
+		if(document.getElementById("nro_fact").value == "" ){
+			alert( "Por favor ingrese su número de factura" );
+			document.getElementById("nro_fact").focus();
+			return false;
+		}
+
+		if(document.getElementById("nombre_validate").value == "" ){
+			alert( "Por favor ingrese su nombre" );
+			document.getElementById("nombre_validate").focus();
+			return false;
+		}
+		
+		if(document.getElementById("apellido_validate").value == "" ){
+			alert( "Por favor ingrese su nombre" );
+			document.getElementById("apellido_validate").focus();
+			return false;
+		}
+		
+		if(document.getElementById("telefono_validate").value == "" ){
+			alert( "Por favor ingrese su nombre" );
+			document.getElementById("telefono_validate").focus();
+			return false;
+		}
+
+		return( true );
+
+	}*/
+	
+	</script>
+	
 		
 	<script type="text/javascript">
 		function combinacion(){
@@ -673,62 +730,7 @@
 		}
 	</script>
 	
-	<script type="text/javascript">
 	
-	var forms = document.getElementsByTagName('form');
-		for (var i = 0; i < forms.length; i++) {
-		forms[i].noValidate = true;
-		forms[i].addEventListener('submit', function(event) {
-        //Prevent submission if checkValidity on the form returns false.
-			if (!event.target.checkValidity()) {
-				event.preventDefault();
-				//Implement you own means of displaying error messages to the user here.
-			}
-			}, false);
-		}
-		
-	/*
-		var form = document.getElementById('M'); // form has to have ID: <form id="formID">
-		form.noValidate = true;
-		form.addEventListener('submit', function(event) { // listen for form submitting
-        if (!event.target.checkValidity()) {
-            event.preventDefault(); // dismiss the default functionality
-            alert('Este campo es requerido'); // error message
-        }
-		}, false);*/
-	
-	/*
-	function validarCampos(){
-
-		if(document.getElementById("nro_fact").value == "" ){
-			alert( "Por favor ingrese su número de factura" );
-			document.getElementById("nro_fact").focus();
-			return false;
-		}
-
-		if(document.getElementById("nombre_validate").value == "" ){
-			alert( "Por favor ingrese su nombre" );
-			document.getElementById("nombre_validate").focus();
-			return false;
-		}
-		
-		if(document.getElementById("apellido_validate").value == "" ){
-			alert( "Por favor ingrese su nombre" );
-			document.getElementById("apellido_validate").focus();
-			return false;
-		}
-		
-		if(document.getElementById("telefono_validate").value == "" ){
-			alert( "Por favor ingrese su nombre" );
-			document.getElementById("telefono_validate").focus();
-			return false;
-		}
-
-		return( true );
-
-	}*/
-	
-	</script>
 	
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
