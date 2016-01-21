@@ -672,6 +672,40 @@
 		}
 	</script>
 	
+	<script type="text/javascript">
+
+	function validarCampos(){
+
+		if(document.getElementById("nro_fact").value == "" ){
+			alert( "Por favor ingrese su número de factura" );
+			document.getElementById("nro_fact").focus();
+			return false;
+		}
+
+		if(document.getElementById("nombre_validate").value == "" ){
+			alert( "Por favor ingrese su nombre" );
+			document.getElementById("nombre_validate").focus();
+			return false;
+		}
+		
+		if(document.getElementById("apellido_validate").value == "" ){
+			alert( "Por favor ingrese su nombre" );
+			document.getElementById("apellido_validate").focus();
+			return false;
+		}
+		
+		if(document.getElementById("telefono_validate").value == "" ){
+			alert( "Por favor ingrese su nombre" );
+			document.getElementById("telefono_validate").focus();
+			return false;
+		}
+
+		return( true );
+
+	}
+	
+	</script>
+	
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -680,6 +714,8 @@
 		ga('create', 'UA-72574379-1', 'auto');
 		ga('send', 'pageview');
 	</script>
+	
+	
 	
   </head>
   <body onload="combinacion()">
@@ -789,10 +825,10 @@
           <div class="adelco-left-G"><img src="img/logo-adelco.png"/></div>
           <form id="M" method="POST" action="procesar-jugar.php">
             <h2>Para participar, debes ingresar el número de factura y tus datos</h2>
-            <input type="text" name="nro_factura" placeholder="Número de factura" required/>
-            <input type="text" name="nombre" placeholder="Nombre" required/>
-            <input type="text" name="apellido" placeholder="Apellido" required/>
-            <input type="text" name="telefono" placeholder="Teléfono (ej: 9 51165286)" required/>
+            <input type="text" name="nro_factura" placeholder="Número de factura" id="nro_fact" />
+            <input type="text" name="nombre" placeholder="Nombre" id="nombre_validate" />
+            <input type="text" name="apellido" placeholder="Apellido" id="apellido_validate" />
+            <input type="text" name="telefono" placeholder="Teléfono (ej: 9 51165286)" id="telefono_validate" />
 			<?php
 					include_once 'config.php';
 		
@@ -841,7 +877,7 @@
               </div>
 			  <input type="text" name="combinacion_send" value="" id="copy_combinationM" hidden=hidden>
             </div>
-            <input type="submit" value="Enviar combinación"/>
+            <input type="submit" onclick="return(validarCampos())" value="Enviar combinación"/>
           </form>
 		  
         </div>
