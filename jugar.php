@@ -674,7 +674,7 @@
 	
 	<script type="text/javascript">
 	
-		var form = document.getElementById('form_mobile'); // form has to have ID: <form id="formID">
+		var form = document.getElementById('M'); // form has to have ID: <form id="formID">
 		form.noValidate = true;
 		form.addEventListener('submit', function(event) { // listen for form submitting
         if (!event.target.checkValidity()) {
@@ -833,7 +833,7 @@
 		  <!--aqui los logos-->
           <div class="logo-rekkit-left-G"><img src="img/logo-rekkit.png"/></div>
           <div class="adelco-left-G"><img src="img/logo-adelco.png"/></div>
-          <form id="M" method="POST" action="procesar-jugar.php" id="form_mobile">
+          <form id="M" method="POST" action="procesar-jugar.php" >
             <h2>Para participar, debes ingresar el número de factura y tus datos</h2>
             <input type="text" name="nro_factura" placeholder="Número de factura" id="nro_fact" />
             <input type="text" name="nombre" placeholder="Nombre" id="nombre_validate" />
