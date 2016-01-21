@@ -68,6 +68,7 @@
 	
 		
 	<script type="text/javascript">
+	/*
 		function combinacion(){
 			
 			//mortein	nugget 	vanish 	durex 	airweek
@@ -727,27 +728,31 @@
 					document.getElementById("copy_combinationM").value = 4;
 			}
 			
-		}
+		}*/
 	</script>
 	
 	
 	
 	<script>
+	/*
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		ga('create', 'UA-72574379-1', 'auto');
 		ga('send', 'pageview');
+		*/
 	</script>
 	
 	
 	
   </head>
   <body onload="combinacion()">
+  <!--
     <div id="preloader">
       <div id="loader"></div>
     </div>
+	-->
     <div class="menu_bar"><a href="#" class="bt-menu"><span><img src="img/menu.png"/></span>Menu</a></div>
     <?php
 		include "menu.php";
@@ -920,10 +925,12 @@
       </div>
     </footer>
     <script>
+	/*
       $(window).load(function() {
       $('#preloader').fadeOut('slow');
       $('body').css({'overflow':'visible'});
       });
+	  */
     </script>
   </body>
 </html>
